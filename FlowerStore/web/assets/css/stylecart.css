@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Signika Negative', 'sans-serif';
+}
+
+.banner {
+    height: 400px;
+    background-image: url(../img/checkout/banner.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-text h1 {
+    color: #fff;
+}
+
+.banner-text h4 {
+    color: #FF6B6B;
+}
+
+.title-page {
+    margin-top: 20px;
+}
+
+.title-page h4 {
+    font-size: 20px;
+}
+
+.title-page a {
+    font-size: 20px;
+    color: #FF6B6B;
+}
+
+.table-cart thead th {
+    text-align: center;
+}
+
+.table-cart tbody td {
+    vertical-align: middle;
+}
+
+.table-cart .product {
+    display: flex;
+    align-items: center;
+}
+
+.table-cart .product p {
+    padding-left: 5px;
+    margin: 0;
+    font-size: 18px;
+}
+
+.table-cart .quantity input {
+    text-align: center;
+    width: 60px;
+}
+
+.table-cart .action {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.table-cart .action .update {
+    padding-right: 10px;
+}
+
+.table-cart .action .update button{
+    padding: 0 15px;
+    border: none;
+    color: #31c6cf;
+    background-color: #f2f6fa;
+    font-weight: 900;
+
+}
+.table-cart .action .delete button{
+    padding: 0 15px;
+    border: none;
+    color: #f58888;
+    background-color: #f2f6fa;
+    font-weight: 900;
+
+}
+
+.table-cart .action .update:active {
+    transform: scale(0.93);
+}
+
+.table-cart .action .delete:active {
+    transform: scale(0.93);
+}
