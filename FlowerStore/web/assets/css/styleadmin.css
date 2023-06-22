@@ -1,0 +1,233 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* font-family: 'Inter'; */
+
+    font-family: 'Signika Negative', sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: white;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(152, 152, 152);
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.9);
+    border-radius: 20px;
+}
+
+body {
+}
+
+.header_main {
+    background-color: white;
+    /* border-bottom: 1px solid grey ; */
+    box-shadow: 0px 0px 7px 2px #999999;
+    z-index: 3;
+    position: relative;
+}
+
+
+.header_main .navbar-content a {
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+.header_main .navbar-content .service {
+    padding: 0;
+}
+
+.header_main .account {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_main .account .admin-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.header_main .account .admin-text p{
+    margin: 0;
+    text-align: start;
+    margin-left: 7px;
+}
+
+ .bell {
+    text-align: center;
+}
+
+
+.body-main .left-bar {
+    background-color: white;
+    min-height: 100vh;
+    box-shadow: 0 4px 2px -2px gray;
+    padding: 0;
+}
+
+
+.body-main .left-bar .service .list-service {
+    list-style-type: none;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.body-main .left-bar .service .list-service a{
+    color: black;
+    line-height: 45px;
+    padding-left: 20px;
+}
+
+.body-main .left-bar .service .list-service a:nth-child(2) {
+    background-color: #f7dad9;
+    box-shadow: 0 4px 5px -2px gray;
+}
+
+.body-main a:hover {
+    text-decoration: none;
+    background-color: #f7dad9;
+    box-shadow: 0 4px 5px -2px gray;
+}
+
+
+.body-main .right-bar {
+    background-color: #f2f6fa;
+}
+
+.body-main .right-bar .info {
+    margin-top: 50px;
+    color: #929293;
+    font-size: 17px;
+    margin-left: 50px;
+}
+
+.body-main .right-bar .control-add-user {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.body-main .right-bar .add-user {
+    margin: 0 20px;
+    text-align: end;
+    width: 163px;
+
+}
+
+ .add-user:active {
+    transform: scale(0.93);
+}
+
+
+
+
+.body-main .right-bar .add-user input {
+    padding: 4px 45px;
+    background-color: #ff6b6b;
+    border: none;
+    color: white;
+    font-weight: 900;
+}
+
+.body-main .right-bar .user-list {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    padding: 15px;
+    position: relative;
+    margin-left: 20px;
+    margin-right: 20px;
+
+
+}
+
+
+.body-main .right-bar .user-list input {
+    position: absolute;
+    right: 20px;
+    width: 300px;
+    border-radius: 7px;
+    padding: 3px;
+    background-color: #f2f6fa;
+    border: none;
+    
+}
+
+.body-main .right-bar .user-list input:focus {
+    padding-left: 35px;
+}
+
+.body-main .right-bar .user-list input::placeholder {
+    padding-left: 35px;
+}
+
+
+
+.body-main .right-bar .user-list p {
+    margin: 0;
+    font-weight: 900;
+    
+}
+
+.body-main .right-bar .user-list i {
+    position: absolute;
+    right: 290px;
+    z-index: 1;
+}
+
+.list-info {
+    margin: 0 20px;
+}
+
+table {
+    width: 100%;
+    border: none;
+}
+
+tr:first-child {
+    color: #898a8a;
+    font-weight: 900;
+}
+
+.action {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.action .update input{
+    padding: 0 15px;
+    border: none;
+    color: #31c6cf;
+    background-color: #f2f6fa;
+    font-weight: 900;
+
+}
+.action .delete input{
+    padding: 0 15px;
+    border: none;
+    color: #f58888;
+    background-color: #f2f6fa;
+    font-weight: 900;
+
+}
+
+.action .update:active {
+    transform: scale(0.93);
+}
+
+.action .delete:active {
+    transform: scale(0.93);
+}
+
+
+
+
