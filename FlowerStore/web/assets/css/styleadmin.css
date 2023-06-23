@@ -3,8 +3,9 @@
     margin: 0;
     box-sizing: border-box;
     /* font-family: 'Inter'; */
+    font-family: 'Josefin Sans', sans-serif;
 
-    font-family: 'Signika Negative', sans-serif;
+    /* font-family: 'Signika Negative', sans-serif; */
 }
 
 ::-webkit-scrollbar {
