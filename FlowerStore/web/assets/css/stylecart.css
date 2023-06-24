@@ -1,11 +1,13 @@
 * {
     box-sizing: border-box;
-    font-family: 'Signika Negative', 'sans-serif';
+    /* font-family: 'Signika Negative', 'sans-serif'; */
+    font-family: 'Josefin Sans', sans-serif;
+
 }
 
 .banner {
     height: 400px;
-    background-image: url(../img/checkout/banner.webp);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url(../img/checkout/banner.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -70,7 +72,7 @@
     padding-right: 10px;
 }
 
-.table-cart .action .update button{
+.table-cart .action .update button {
     padding: 0 15px;
     border: none;
     color: #31c6cf;
@@ -78,7 +80,8 @@
     font-weight: 900;
 
 }
-.table-cart .action .delete button{
+
+.table-cart .action .delete button {
     padding: 0 15px;
     border: none;
     color: #f58888;

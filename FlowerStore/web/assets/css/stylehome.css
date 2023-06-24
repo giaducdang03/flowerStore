@@ -5,6 +5,7 @@
     /* font-family: 'Inter', sans-serif; */
     /* font-family: 'Signika Negative', sans-serif; */
     font-family: 'Josefin Sans', sans-serif;
+    scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar {
@@ -54,6 +55,8 @@ body {}
 .header_main .right-nav {
     align-items: center;
     text-align: center;
+    width: 100%;
+    display: inline-flex;
 }
 
 .header_main .cart {
@@ -73,15 +76,6 @@ body {}
     position: relative;
 }
 
-/* .active {
-    content: "";
-    background-color: white;
-    position: absolute;
-    left: 10px;
-    bottom: 0;  
-    height: 4px;
-    width: 0;
-} */
 
 
 .navbar-nav li a::before {
@@ -92,7 +86,7 @@ body {}
     bottom: 0;
     height: 4px;
     width: 0;
-    transition: 0.2s ease-in;
+    transition: 0.15s ease-in;
 }
 
 .navbar-nav li a:hover::before {
@@ -132,9 +126,6 @@ a:hover {
 
 .body .banner-img .banner-img-text {
     position: absolute;
-    /* top: 28%; */
-    /* bottom: 28%; */
-    /* left: 5%; */
     color: white;
     line-height: px;
     width: 35%;
@@ -144,6 +135,13 @@ a:hover {
     left: 100px;
 }
 
+.body .banner-img .banner-img-text a {
+    transition: .2s;
+}
+
+.body .banner-img .banner-img-text a:active {
+    transform: scale(0.93);
+}
 
 .body .banner-img .banner-img-text h1 {
     font-family: 'Josefin Sans', sans-serif;
@@ -155,19 +153,21 @@ a:hover {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 25px;
     margin-bottom: 30px;
+    font-weight: 300;
 }
+
 .body .banner-img .banner-img-text a {
     margin-top: 30px;
+    font-weight: 300;
 }
 
 .body .banner-img .banner-img-text span {
     font-family: 'Josefin Sans', sans-serif;
-    border: 3px solid white;
+    border: 2px solid white;
     padding: 10px 40px;
     font-size: 30px;
     color: white;
     text-decoration: none;
-    /* font-weight: 900; */
 }
 
 .body .banner-img .banner-img-text a:hover {
@@ -181,14 +181,280 @@ a:hover {
     color: black;
 }
 
-.container .product1 {
-    background-image: url("../img/hot/At-Anniversaries.webp");
-    background-size: cover;
-    background-position: center;
+
+.intro-product .hot-product {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.intro-product .product {
+    position: relative;
+    width: 100%;
+    margin: 20px;
+    min-height: 400px;
+    overflow: hidden;
+    margin: 20px 6px;
+}
+
+
+.product .child {
+    height: 100%;
+    background-position: right;
     background-repeat: no-repeat;
- 
+    background-size: cover;
+    transition: transform 0.8s;
+}
+
+.product .product-img-left {
+    background-image: url('../img/hot/At-Anniversaries.webp');
+}
+
+.product .product-img-center {
+    background-image: url('../img/hot/for-birthday.webp');
+}
+
+.product .product-img-right {
+    background-image: url('../img/hot/Same-Day-Florist.webp');
+}
+
+.product:hover .child {
+    transform: scale(1.2);
+}
+
+.product-text {
+    position: absolute;
+    z-index: 1;
+    top: 20%;
+    left: 10%;
+}
+
+.product-text p:first-child {
+    color: #8b8b8c;
+    font-size: 18px;
+}
+
+.product-text p:nth-child(2) {
+    font-size: 30px;
+}
+
+.product-text p:nth-child(3) {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.product-text span {
+    color: red;
+}
+
+.product-text input {
+    margin-top: 100px;
+    border: 2px solid #eaeaea;
+    background-color: white;
+    padding: 10px 20px;
+    border: none;
+    transition: transform 0.2s;
+}
+
+.product-text input:active {
+    transform: scale(0.9);
+}
+
+.process {
+    width: 99%;
+    margin: 60px auto;
+}
+
+.process .process-list {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.process .process-list .process-object {
+    text-align: center;
+    padding: 15px;
+    width: 25%;
+    margin: 20px 0;
+}
+
+.process .process-list .process-object i {
+    margin-bottom: 25px;
+}
+
+.process .process-list .process-object p:nth-child(2) {
+    font-size: 26px;
+}
+
+.process .process-list .process-object p:last-child {
+    font-size: 13px;
+    color: #757575;
 
 }
+
+
+.best-seller {
+    margin: 100px auto;
+    width: 90%;
+}
+
+.best-seller-title {
+    margin: 0 auto;
+    text-align: center;
+    width: 48%;
+}
+
+.best-seller .best-seller-title h1 {
+    font-weight: 900;
+}
+
+
+.best-seller .best-seller-title p {
+    font-size: 14px;
+}
+
+.best-seller .best-seller-product {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 55px;
+}
+
+.best-seller-product-list {
+    position: relative;
+    width: 20%;
+    margin: 20px;
+    min-height: 450px;
+    overflow: hidden;
+    margin: 20px 6px;
+}
+
+.best-seller-product-list .child {
+    height: 90%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: transform 0.8s;
+    position: relative;
+
+}
+
+.best-seller-product-object-one {
+    background-image: url('../img/best-seller/Grand-Prix-Rose-Hand-Tied.webp');
+}
+
+.best-seller-product-object-two {
+    background-image: url('../img/best-seller/Autumn-basket.webp');
+}
+
+.best-seller-product-object-three {
+    background-image: url('../img/best-seller/Baby-Boy-Perfect-Gift.webp');
+}
+
+.best-seller-product-object-four {
+    background-image: url('../img/best-seller/Heavenly-Red-Rose-Hand-Tied.webp');
+}
+
+.best-seller-product-object-five {
+    background-image: url('../img/best-seller/Baby-Boy-Perfect-Gift.webp');
+
+}
+
+.best-seller-product-object-six {
+    background-image: url('../img/best-seller/Vera-Wang-Purest-Grace.webp');
+}
+
+.best-seller-product-object-seven {
+    background-image: url('../img/best-seller/Grand-Prix-Rose-Hand-Tied.webp');
+
+}
+
+.best-seller-product-object-eight {
+    background-image: url('../img/best-seller/Autumn-basket.webp');
+}
+
+.best-seller-product-list:hover .child {
+    transform: scale(1.1);
+}
+
+.best-seller-product-list .hot-sale {
+    position: absolute;
+    top: 20px;
+    background-color: #e55472;
+    color: white;
+    padding: 0 10px;
+    z-index: 7;
+}
+
+.best-seller-product-list .add-to-cart {
+    position: absolute;
+    width: 100%;
+    bottom: 20px;
+    color: black;
+    padding: 5px 0;
+    
+}
+
+.best-seller-product .best-seller-product-list form {
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+    text-align: center;
+}
+
+
+p {
+    margin: 0;
+}
+
+
+.best-add-to-cart {
+    width: 100%;
+    min-height: 400px;
+    top:0;
+    left: -100%;
+    position: absolute;
+    backdrop-filter: blur(5px);
+    color: white;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .2s;
+    z-index: -1;
+}
+
+.best-seller-product-list:hover .best-add-to-cart {
+    left: 0;
+}
+
+.best-seller-product-list:hover .best-add-to-cart input{
+    width: 80%;
+    padding: 5px 0;
+    border: none;
+    font-weight: 900;
+    transition: transform .2s;
+}
+
+.best-seller-product-list:hover .best-add-to-cart input:hover {
+    background-color: #e55472;
+    color: white;
+}
+
+.best-seller-product-list:hover .best-add-to-cart input:active {
+    transform: scale(0.93);
+}
+
+
+.best-text {
+    position: relative;
+    top: 400px;
+}
+
+/* End body  */
+
+
+
+
+
 
 
 
@@ -220,7 +486,7 @@ a:hover {
     margin-left: 40%;
     border: 4px solid white;
     padding: 40px;
-    
+
 }
 
 .subcribe-search {
@@ -234,7 +500,7 @@ a:hover {
 
 }
 
-.subcribe-img-text p{
+.subcribe-img-text p {
     font-family: 'Josefin Sans', sans-serif;
     margin-top: 20px;
     width: 100%;
@@ -242,12 +508,13 @@ a:hover {
     /* color: black; */
 }
 
-.subcribe-search button{
+.subcribe-search button {
     width: 15%;
-    background-color:#ec9f9f ;
+    background-color: #ec9f9f;
     padding: 5px;
     border: none;
 }
+
 .subcribe-search button i:hover {
     color: white;
 }

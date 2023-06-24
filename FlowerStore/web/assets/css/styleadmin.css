@@ -114,10 +114,11 @@ body {
 .body-main .right-bar .control-add-user {
     display: flex;
     flex-direction: row-reverse;
+    margin: 20px;
 }
 
 .body-main .right-bar .add-user {
-    margin: 0 20px;
+    /* margin: 0 30px; */
     text-align: end;
     width: 163px;
 
@@ -131,7 +132,7 @@ body {
 
 
 .body-main .right-bar .add-user input {
-    padding: 4px 45px;
+    padding: 4px 40px;
     background-color: #ff6b6b;
     border: none;
     color: white;
