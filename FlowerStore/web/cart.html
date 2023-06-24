@@ -18,6 +18,11 @@
     <link rel="stylesheet" href="./assets/css/stylecart.css">
 </head>
 
+<style>
+
+</style>
+
+
 <body>
     <div class="container-fluid">
         <div class="row banner">
@@ -39,7 +44,7 @@
             <div class="col-md-8">
                 <table class="table table-cart">
                     <thead>
-                        <tr>
+                        <tr class="title">
                             <th>Flower</th>
                             <th>Price</th>
                             <th>Quantity</th>
@@ -48,99 +53,106 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>
-                                <div class="product">
-                                    <img src="./assets/img/best-seller/Pink-Flower-Tree.png" alt width="70px"
-                                        height="70px">
-                                    <p>Pink Flower Tree</p>
-                                </div>
-                            </td>
-                            <td> <span>$18.00</span></td>
-                            <td class="quantity">
-                                <input type="number" value="1" min="1">
-                            </td>
-                            <td>$18.00</td>
-                            <td>
-                                <div class="action">
-                                    <div class="update">
-                                        <!-- <input type="submit" value="Update"> -->
-                                        <button><i class="fa-solid fa-pen-to-square"></i></button>
+                        <form action="">
+                            <tr>
+                                <td>
+                                    <div class="product">
+                                        <img src="./assets/img/best-seller/Pink-Flower-Tree.png" alt width="70px"
+                                            height="70px">
+                                        <p>Pink Flower Tree</p>
                                     </div>
-                                    <div class="delete">
-                                        <!-- <input type="submit" value="Delete"> -->
-                                        <button><i class="fa-solid fa-trash-can"></i></button>
+                                </td>
+                                <td> <span>$18.00</span></td>
+                                <td class="quantity">
+                                    <input type="number" value="1" min="1">
+                                </td>
+                                <td>$18.00</td>
+                                <td>
+                                    <div class="action">
+                                        <div class="update">
+                                            <!-- <input type="submit" value="Update"> -->
+                                            <button><i class="fa-solid fa-pen-to-square"></i></button>
+                                        </div>
+                                        <div class="delete">
+                                            <!-- <input type="submit" value="Delete"> -->
+                                            <button><i class="fa-solid fa-trash-can"></i></button>
+                                        </div>
                                     </div>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="product">
-                                    <img src="./assets/img/best-seller/Autumn-basket.webp" alt width="70px"
-                                        height="70px">
-                                    <p>Autumn basket</p>
-                                </div>
-                            </td>
-                            <td> <span>$18.00</span></td>
-                            <td class="quantity">
-                                <input type="number" value="1" min="1">
-                            </td>
-                            <td>$18.00</td>
-                            <td>
-                                <div class="action">
-                                    <div class="update">
-                                        <!-- <input type="submit" value="Update"> -->
-                                        <button><i class="fa-solid fa-pen-to-square"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="product">
+                                        <img src="./assets/img/best-seller/Autumn-basket.webp" alt width="70px"
+                                            height="70px">
+                                        <p>Autumn basket</p>
                                     </div>
-                                    <div class="delete">
-                                        <!-- <input type="submit" value="Delete"> -->
-                                        <button><i class="fa-solid fa-trash-can"></i></button>
+                                </td>
+                                <td> <span>$18.00</span></td>
+                                <td class="quantity">
+                                    <input type="number" value="1" min="1">
+                                </td>
+                                <td>$18.00</td>
+                                <td>
+                                    <div class="action">
+                                        <div class="update">
+                                            <!-- <input type="submit" value="Update"> -->
+                                            <button><i class="fa-solid fa-pen-to-square"></i></button>
+                                        </div>
+                                        <div class="delete">
+                                            <!-- <input type="submit" value="Delete"> -->
+                                            <button><i class="fa-solid fa-trash-can"></i></button>
+                                        </div>
                                     </div>
-                                </div>
-                            </td>
-                        </tr>
+                                </td>
+                            </tr>
+                        </form>
 
                     </tbody>
                 </table>
 
+
+
             </div>
-            <div class="col-md-4">
-                <table class="table">
+            <div class="col-md-4 checkout">
+                <table class="table-checkout">
                     <thead>
-                        <th>
+                        <td colspan="2" class="title">
                             Cart total
-                        </th>
+                        </td>
                         <th></th>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>Subtotal:</td>
-                            <td>$167.00</td>
-                        </tr>
-                        <tr>
-                            <td>Shipping:</td>
-                            <td>$3.00</td>
-                        </tr>
-                        <tr>
-                            <td>Total:</td>
-                            <td>$170.00</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input type="submit" value="CHECK OUT">
-                            </td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <a href="./home.html">BUY MORE</a>
-                            </td>
-                            <td></td>
-                        </tr>
+                        <form action="">
+                            <tr class="caculator">
+                                <td>Subtotal:</td>
+                                <td>$167.00</td>
+                            </tr>
+                            <tr class="caculator">
+                                <td>Shipping:</td>
+                                <td>$3.00</td>
+                            </tr>
+                            <tr style="border-top: 2px solid black;"></tr>
+                            <tr class="caculator">
+                                <td>Total:</td>
+                                <td style="color: red; font-weight: 900;">$170.00</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="check-out">
+                                    <input type="submit" value="CHECK OUT">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="buy-more">
+                                    <input type="submit" value="BUY MORE">
+                                </td>
+
+                            </tr>
+                        </form>
+
                     </tbody>
                 </table>
-                
+
             </div>
         </div>
 

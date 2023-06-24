@@ -2,10 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    /* font-family: 'Inter'; */
     font-family: 'Josefin Sans', sans-serif;
-
-    /* font-family: 'Signika Negative', sans-serif; */
 }
 
 ::-webkit-scrollbar {
@@ -84,7 +81,7 @@ body {
 
 .body-main .left-bar .service .list-service a{
     color: black;
-    line-height: 45px;
+    line-height: 57px;
     padding-left: 20px;
 }
 
@@ -129,8 +126,6 @@ body {
 }
 
 
-
-
 .body-main .right-bar .add-user input {
     padding: 4px 40px;
     background-color: #ff6b6b;
@@ -143,20 +138,18 @@ body {
     background-color: white;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     margin-top: 30px;
     padding: 15px;
-    position: relative;
+    /* position: relative; */
     margin-left: 20px;
     margin-right: 20px;
-
-
 }
 
 
-.body-main .right-bar .user-list input {
-    position: absolute;
-    right: 20px;
-    width: 300px;
+.body-main .right-bar .user-list input[type='text'] {
+    width: 250px;
+    padding: 0 20px;
     border-radius: 7px;
     padding: 3px;
     background-color: #f2f6fa;
@@ -164,13 +157,32 @@ body {
     
 }
 
-.body-main .right-bar .user-list input:focus {
-    padding-left: 35px;
+.body-main .right-bar .user-list input[type='submit'] {
+    right: 20px;
+    border: none;
+    padding: 3px;
+    background-color: #f2f6fa;
 }
 
-.body-main .right-bar .user-list input::placeholder {
-    padding-left: 35px;
+.body-main .right-bar .user-list input[type='submit']:hover {
+    background-color: #ff6b6b;
+    color: white;
+
 }
+
+.body-main .right-bar .user-list input[type='submit']:active {
+    transform: scale(0.93);
+}
+
+
+
+/* .body-main .right-bar .user-list input:focus {
+    padding-left: 35px;
+} */
+
+/* .body-main .right-bar .user-list input::placeholder {
+    padding-left: 35px;
+} */
 
 
 
@@ -229,6 +241,9 @@ tr:first-child {
 .action .delete:active {
     transform: scale(0.93);
 }
+
+
+
 
 
 
