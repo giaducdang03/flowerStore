@@ -8,7 +8,7 @@
 
 .payment-container {
     margin-top: 20px;
-    border: 2px solid #5D9C59;
+    border: 2px solid #E74646;
     background: #FFF;
 }
 
@@ -17,13 +17,18 @@
 }
 
 .payment-in4 table .amout {
-    color: #5D9C59;
+    color: #E74646;
+    font-weight: bold;
+}
+
+.payment-in4 table .error-code {
+    color: #E74646;
     font-weight: bold;
 }
 
 .pay-header {
     text-align: center;
-    background-color: #5D9C59;
+    background-color: #E74646;
     padding: 10px;
 }
 
