@@ -35,7 +35,7 @@
     function forgot_pass() {
         var forgot = document.getElementById('forgot-pass');
         var show = document.getElementById('popup');
-        var full = document.getElementById('full');
+
         if (forgot) {
             show.style.display = 'block';
         }

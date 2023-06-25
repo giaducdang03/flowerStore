@@ -40,6 +40,10 @@
     color: #FF6B6B;
 }
 
+.left-tbody td{
+    text-align: center;
+}
+
 .table-cart thead th {
     text-align: center;
 }

@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+    /* font-family: 'Signika Negative', 'sans-serif'; */
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+
+.container {
+    background-color: #f4f4f4;
+}
+
+.background-container {
+    background-color: #f4f4f4;
+    min-height: 900px;
+}
+
+
+.background-container .row {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+
+
+
+.banner {
+    height: 400px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url(../img/checkout/banner.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-text h1 {
+    color: #fff;
+    font-size: 80px;
+}
+
+.banner-text h4 {
+    color: #FF6B6B;
+    font-size: 40px;
+}
+
+.title-page {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+.title-page h4 {
+    font-size: 20px;
+}
+
+.title-page a {
+    font-size: 20px;
+    color: #FF6B6B;
+}
+
+.left-table {}
+
+.billing-details p {
+    color: #7b7b7b;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.table-cart {
+    background-color: white;
+    width: 100%;
+    /* padding: 50px; */
+}
+
+
+.checkout td {
+    padding: 13px 15px;
+}
+
+.table-cart td {
+    padding: 13px 15px;
+    
+}
+
+.checkout {
+    display: flex;
+    /* justify-content: sta; */
+    padding:0;
+    padding-left: 10px;
+    background-color: white;
+    border: 1px solid #e8e8e8;
+}
+
+.table-checkout {
+    width: 80%;
+    margin: 0 auto;
+    margin: 0;
+}
+
+.table-checkout .caculator td:last-child {
+    text-align: end;
+}
+
+
+.title-page {
+    margin-top: 20px;
+}
+
+.title-page h4 {
+    font-size: 20px;
+}
+
+.title-page a {
+    font-size: 20px;
+    color: #FF6B6B;
+}
+
+.left-tbody td {
+    text-align: center;
+}
+
+.table-cart thead th {
+    text-align: center;
+}
+
+.table-cart tbody td {
+    vertical-align: middle;
+}
+
+.table-cart .product {
+    display: flex;
+    align-items: center;
+}
+
+.table-cart .product p {
+    padding-left: 5px;
+    margin: 0;
+    font-size: 18px;
+}
+
+
+
+.payment {
+    display: flex;
+    justify-content: start;
+    padding: 0;
+    background-color: white;
+    border: 1px solid #e8e8e8;
+    width: 50%;
+}
+
+

@@ -105,13 +105,13 @@ body {
     margin-top: 50px;
     color: #929293;
     font-size: 17px;
-    margin-left: 50px;
+    margin-left: 30px;
 }
 
 .body-main .right-bar .control-add-user {
     display: flex;
     flex-direction: row-reverse;
-    margin: 20px;
+    margin: 30px;
 }
 
 .body-main .right-bar .add-user {
@@ -142,8 +142,8 @@ body {
     margin-top: 30px;
     padding: 15px;
     /* position: relative; */
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
 
@@ -199,7 +199,7 @@ body {
 }
 
 .list-info {
-    margin: 0 20px;
+    margin: 0 30px;
 }
 
 table {
