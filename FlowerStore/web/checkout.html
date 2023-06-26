@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cart | Lily Lane</title>
+    <title>Check out | Lily Lane</title>
     <!-- Google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,29 +30,28 @@
         <div class="row banner">
             <div class="banner-text">
                 <h4>LiLy Lane Store</h4>
-                <h1>MY CART</h1>
+                <h1>CHECK OUT</h1>
             </div>
         </div>
     </div>
 
     <div class="background-container">
         <div class="container">
-            <form action="">
-                <div class="row">
-                    <div class="title-page col-md-12">
-                        <h4><a href="./home.html"><i class="fa-solid fa-home"></i></a>
-                            <i class="fa-solid fa-angle-right"></i> Your shopping cart
-                            <i class="fa-solid fa-angle-right"></i> Check out
-                        </h4>
-                    </div>
+            <div class="row">
+                <div class="title-page col-md-12">
+                    <h4><a href="./home.html"><i class="fa-solid fa-home"></i></a>
+                        <i class="fa-solid fa-angle-right"></i> Your shopping
+                        cart
+                        <i class="fa-solid fa-angle-right"></i> Check out
+                    </h4>
                 </div>
-                <div class="row">
-                    <div class="col-md-8" class="left-table">
-                        <div class="billing-details">
+            </div>
+            <form action="">
+                <div>
+                    <div class="checkout">
+                        <div>
                             <p>Billing Details</p>
-                        </div>
-                        <table class="table-cart">
-                            <form action="">
+                            <table class="table-cart">
                                 <tr>
                                     <td>Full Name:</td>
                                     <td>Duong Ton Bao</td>
@@ -62,137 +61,200 @@
                                     <td>Thu Duc City, Ho Chi Minh City</td>
                                 </tr>
                                 <tr>
-                                    <td>Email</td>
-                                    <td><input type="text" style="width: 80%; border: none;"
-                                            value="duongbaodeptryhard2k3@gmail.com"></td>
+                                    <td>Email:</td>
+                                    <td><input type="text" value="duongbaodeptryhard2k3@gmail.com"></td>
                                 </tr>
-                            </form>
-                        </table>
-                    </div>
-                    <div class="col-md-4 checkout">
-                        <table class="table-checkout">
-                            <thead>
-                                <td colspan="2" class="title">
-                                    Cart total
-                                </td>
-                            </thead>
-                            <tbody>
-                                <tr class="caculator">
-                                    <td>Subtotal:</td>
-                                    <td>$167.00</td>
-                                </tr>
-                                <tr class="caculator">
-                                    <td>Shipping:</td>
-                                    <td>$3.00</td>
-                                </tr>
-                                <tr style="border-top: 2px solid #dcdcdc;"></tr>
-                                <tr class="caculator">
-                                    <td>Total:</td>
-                                    <td style="color: red; font-weight: 900;">$170.00</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
 
-                <div class="row">
-                    <div class="col-md-8" class="left-table">
-                        <div class="billing-details">
-                            <p>Your order</p>
+                            </table>
                         </div>
-                        <table class="table table-cart">
-                            <thead>
-                                <tr class="title">
-                                    <th>Flower</th>
-                                    <th>Price</th>
-                                    <th>Total</th>
-                                </tr>
-                            </thead>
-                            <tbody class="left-tbody">
-                                <tr>
-                                    <td>
-                                        <div class="product">
-                                            <img src="./assets/img/best-seller/Pink-Flower-Tree.png" alt width="70px"
-                                                height="70px">
-                                            <p>Pink Flower Tree</p>
-                                        </div>
+
+                        <div>
+                            <table class="table-checkout">
+                                <thead>
+                                    <td colspan="2" class="title">
+                                        Cart total
                                     </td>
-                                    <td>$90.00</td>
-                                    <td>$90.00</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <div class="product">
-                                            <img src="./assets/img/best-seller/Autumn-basket.webp" alt width="70px"
-                                                height="70px">
-                                            <p>Autumn basket</p>
-                                        </div>
-                                    </td>
-                                    <td>$72.00</td>
-                                    <td>$72.00</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <div class="product">
-                                            <img src="./assets/img/best-seller/Autumn-basket.webp" alt width="70px"
-                                                height="70px">
-                                            <p>Autumn basket</p>
-                                        </div>
-                                    </td>
-                                    <td>$72.00</td>
-                                    <td>$72.00</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <div class="product">
-                                            <img src="./assets/img/best-seller/Autumn-basket.webp" alt width="70px"
-                                                height="70px">
-                                            <p>Autumn basket</p>
-                                        </div>
-                                    </td>
-                                    <td>$72.00</td>
-                                    <td>$72.00</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                                </thead>
+                                <tbody>
+                                    <tr class="caculator">
+                                        <td>Subtotal:</td>
+                                        <td>$167.00</td>
+                                    </tr>
+                                    <tr class="caculator">
+                                        <td>Shipping:</td>
+                                        <td>$3.00</td>
+                                    </tr>
+                                    <tr style="border-top: 2px solid #CCCCCC;"></tr>
+                                    <tr class="caculator">
+                                        <td>Total:</td>
+                                        <td>$170.00</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
-                    <div class="col-md-4 checkout">
-                        <table class="table-checkout">
-                            <thead>
-                                <td colspan="2" class="title">
-                                    Payment Method
-                                </td>
-                            </thead>
-                            <tbody>
-                                <tr class="caculator">
-                                    <td>Subtotal:</td>
-                                    <td>$167.00</td>
-                                </tr>
-                                <tr class="caculator">
-                                    <td>Shipping:</td>
-                                    <td>$3.00</td>
-                                </tr>
-                                <tr style="border-top: 2px solid #dcdcdc;"></tr>
-                                <tr class="caculator">
-                                    <td>Total:</td>
-                                    <td style="color: red; font-weight: 900;">$170.00</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-
-
-
-
-
-
                 </div>
 
 
+                <div style="margin-top: 250px;">
+                    <div class="checkout">
+                        <div>
+                            <p>Your Order</p>
+                            <table class="table table-cart">
+                                <thead>
+                                    <tr class="title">
+                                        <th>Flower</th>
+                                        <th>Quantity</th>
+                                        <th>Price</th>
+                                        <th>Total</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="left-tbody">
+                                    <tr>
+                                        <td>
+                                            <div class="product">
+                                                <img src="./assets/img/best-seller/Pink-Flower-Tree.png" alt
+                                                    width="70px" height="70px">
+                                                <p>Pink Flower Tree</p>
+                                            </div>
 
+                                        </td>
+                                        <td class="quantity">
+                                            <input type="number" value="1" min="1" readonly >
+                                        </td>
+                                        <td>$18.00</td>
+                                        <td>$18.00</td>
+
+
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="product">
+                                                <img src="./assets/img/best-seller/Autumn-basket.webp" alt width="70px"
+                                                    height="70px">
+                                                <p>Autumn basket</p>
+                                            </div>
+                                        </td>
+                                        <td class="quantity">
+                                            <input type="number" value="1" min="1" readonly>
+                                        </td>
+                                        <td>$18.00</td>
+                                        <td>$18.00</td>
+
+
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="product">
+                                                <img src="./assets/img/best-seller/Autumn-basket.webp" alt width="70px"
+                                                    height="70px">
+                                                <p>Autumn basket</p>
+                                            </div>
+                                        </td>
+                                        <td class="quantity">
+                                            <input type="number" value="1" min="1" readonly>
+                                        </td>
+                                        <td>$18.00</td>
+                                        <td>$18.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="product">
+                                                <img src="./assets/img/best-seller/Autumn-basket.webp" alt width="70px"
+                                                    height="70px">
+                                                <p>Autumn basket</p>
+                                            </div>
+                                        </td>
+                                        <td class="quantity">
+                                            <input type="number" value="1" min="1" readonly>
+                                        </td>
+                                        <td>$18.00</td>
+                                        <td>$18.00</td>
+
+
+
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="product">
+                                                <img src="./assets/img/best-seller/Autumn-basket.webp" alt width="70px"
+                                                    height="70px">
+                                                <p>Autumn basket</p>
+                                            </div>
+                                        </td>
+                                        <td class="quantity">
+                                            <input type="number" value="1" min="1" readonly>
+                                        </td>
+                                        <td>$18.00</td>
+                                        <td>$18.00</td>
+
+
+
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="product">
+                                                <img src="./assets/img/best-seller/Autumn-basket.webp" alt width="70px"
+                                                    height="70px">
+                                                <p>Autumn basket</p>
+                                            </div>
+                                        </td>
+                                        <td class="quantity">
+                                            <input type="number" value="1" min="1" readonly>
+                                        </td>
+                                        <td>$18.00</td>
+                                        <td>$18.00</td>
+
+
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div>
+                            <table class="table-checkout">
+                                <thead>
+                                    <td colspan="2" class="title">
+                                        Payment Method
+                                    </td>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="vnpay">
+                                                <div class="vnpay-group">
+                                                    <img src="./assets/img/logo/202166185_2021396718013233_8499389898242103910_n.png"
+                                                        alt="" width="20%">
+                                                    <p>VNPAY</p>
+                                                </div>
+                                                <input type="checkbox" name="" id="" readonly>
+                                            </div>
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                        <td class="check-terms">
+                                            <div class="terms">
+                                                <input type="checkbox">
+                                                <p>I have read and accept the terms and conditions</p>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2" class="check-out" readonly>
+                                            <input type="submit" value="Payment">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
             </form>
         </div>
     </div>
+
+
 
 
     <script src="./assets/js/bootstrap/jquery.min.js"></script>
