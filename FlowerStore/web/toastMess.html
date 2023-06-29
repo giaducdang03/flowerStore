@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Signika Negative' rel='stylesheet'>
+
+    <link rel="stylesheet" href="./assets/css/font/css/all.css">
+    <link rel="stylesheet" href="./assets/css/toastMessage.css">
+</head>
+<body>
+    <div id="toast"></div>
+    <div>
+        <div onclick="showSuccessToast()" class="btn">Show Success toast</div>
+        <div onclick="showErrorToast()" class="btn">Show Error toast</div>
+    </div>
+    
+   
+    <script src="./assets/js/bootstrap/jquery.min.js"></script>
+    <script src="./assets/js/bootstrap/popper.min.js"></script>
+    <script src="./assets/js/bootstrap/bootstrap.min.js"></script>
+    <script src="./assets/js/toastMessage.js"></script>
+    <script>
+        // show toast function
+        function showSuccessToast() {
+            toast ({
+            title: 'Success',
+            message: 'Computer connected.',
+            type: 'success',
+            duration: 5000
+        });
+        }
+
+        function showErrorToast() {
+            toast ({
+            title: 'Error',
+            message: 'Somethings is error :(',
+            type: 'error',
+            duration: 5000
+        });
+        }
+       
+    </script>
+</body>
+</html>
