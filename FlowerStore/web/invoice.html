@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f7f7f7;
+        }
+
+        .header img {
+            display: block;
+            margin: 0 auto;
+        }
+
+        .title {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .title h2 {
+            margin-bottom: 5px;
+            color: #FF6B6B;
+        }
+
+        .title p {
+            margin-top: 6px;
+            color: #757575;
+        }
+
+        .line {
+            border-top: 1px solid #ddd;
+            margin-top: 20px;
+        }
+
+        .content {
+            margin-top: 20px;
+        }
+
+        .content h4 span {
+            color: #FF6B6B;
+        }
+
+        .content p strong {
+            color: #747474;
+        }
+
+        table {
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        th {
+            font-weight: bold;
+            text-align: left;
+        }
+
+        .price {
+            color: #10b981;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="./assets/img/logo/lily-lane-logo-web.png" alt="Company Logo" width="100px">
+        </div>
+        <div class="title">
+            <h2>Thank you for your order</h2>
+            <p>We've received your payment and here is a summary:</p>
+        </div>
+        <div class="line"></div>
+        <div class="content">
+            <h4>Invoice <span>#94389</span></h4>
+            <p><strong>Customer:</strong></p>
+            <p>Dang Gia Duc</p>
+            <p><strong>Email:</strong></p>
+            <p>giaducdang@gmail.com</p>
+            <p><strong>Payment method:</strong></p>
+            <p>VNPAY</p>
+            <p><strong>Date of payment:</strong></p>
+            <p>2023-06-30</p>
+        </div>
+        <div class="line"></div>
+        <table>
+            <tr>
+                <th>Total amount paid:</th>
+                <td class="price">400,000 VND</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
