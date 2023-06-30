@@ -481,21 +481,6 @@ p {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* behind footer  */
 .subcribe-img {
     min-height: 500px;
@@ -518,8 +503,6 @@ p {
 }
 
 .subcribe-search {
-    /* display: flex;
-    justify-content: center; */
     margin-top: 50px;
 }
 
@@ -533,7 +516,6 @@ p {
     margin-top: 20px;
     width: 100%;
     font-size: 18px;
-    /* color: black; */
 }
 
 .subcribe-search button {
@@ -548,16 +530,12 @@ p {
 }
 
 
-
 .subcribe-search input {
     padding: 5px;
     border: 2px solid #e6e6e6;
     width: 70%;
     margin-right: 15px;
 }
-
-
-
 
 
 
@@ -594,7 +572,6 @@ p {
     font-style: normal;
     font-weight: 400;
     font-size: 17px;
-    /* line-height: 162.52%; */
     line-height: 50px;
     margin-left: 20px;
     list-style-type: none;

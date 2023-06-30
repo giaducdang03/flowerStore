@@ -1,189 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Flower</title>
-    <!-- Google font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400&display=swap"
-        rel="stylesheet">
-    <!-- <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'> -->
-    <!-- boostrap -->
-    <link rel="stylesheet" href="./assets/css/bootstrap.min/bootstrap.min.css">
-    <link rel="stylesheet" href="./assets/css/font/css/all.css">
-    <link rel="stylesheet" href="./assets/css/stylecart.css">
-    <!-- <link rel="icon" type="image/x-icon" href="./assets/logo/icon-web.png">
-    <link rel="stylesheet" href="./assets/css/bootstrap.min/bootstrap.min.css">
-    <link rel="stylesheet" href="./assets/css/font/css/all.css"> -->
-    <link rel="stylesheet" href="./assets/css/stylelogin.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login Flower</title>
+        <!-- Google font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400&display=swap"
+              rel="stylesheet">
+        <!-- <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'> -->
+        <!-- boostrap -->
+        <link rel="stylesheet" href="assets/css/bootstrap.min/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/font/css/all.css">
+        <link rel="stylesheet" href="assets/css/stylecart.css">
+        <!-- <link rel="icon" type="image/x-icon" href="./assets/logo/icon-web.png">
+        <link rel="stylesheet" href="./assets/css/bootstrap.min/bootstrap.min.css">
+        <link rel="stylesheet" href="./assets/css/font/css/all.css"> -->
+        <link rel="stylesheet" href="assets/css/stylelogin.css">
+    </head>
 
-<body onload="getCookiedata()">
-    <!-- Header & navbar  -->
-    <div class="background-img"></div>
-    <div class="outline">
-        <div class="background-url" id="container">
-            <div class="form-container  login-container" id="login">
-                <form action="" style="top: 60px;">
-                    <div class="header">
-                        <div>SIGN IN</div>
-                    </div>
-                    <div class="login-type">
-                        <div class="inputBox">
-                            <input type="text" required="" id="username">
-                            <span>UserName</span>
+    <body onload="getCookiedata()">
+        <!-- Header & navbar  -->
+        <div class="background-img"></div>
+        <div class="outline">
+            <div class="background-url" id="container">
+                <div class="form-container  login-container" id="login">
+                    <form action="MainController" style="top: 60px;" method="POST">
+                        <div class="header">
+                            <div>SIGN IN</div>
                         </div>
-                        <div class="inputBox">
-                            <div class="password-input">
-                                <input type="password" required="" id="password-text">
-                                <span>Password</span>
-                            </div>
-                            <!-- <span class="eye">
-                                <i id="showPassword" class="fa-solid fa-eye"></i>
-                            </span> -->
-                        </div>
-                    </div>
-                    <li class="login-function">
-                        <span><input type="checkbox" onclick="saveInfo()">Remember Me</span>
-                        <a href="#" id="forgot-pass" onclick="forgot_pass()">Forgot Password?</a>
-                    </li>
-                    <p class="mess-error"><span>Your username or password is incorrect</span></p>
-                    <div class="login-success">
-                        <input type="submit" value="SIGN IN">
-                    </div>
-                    <div class="other-login-icon">
-                        <div class="or-login">
-                            <div class="line"></div>
-                            <span>OR</span>
-                            <div class="line"></div>
-                        </div>
-                        <ul class="other-signin">
-                            <a href="#">
-                                <li><i class="fab fa-google fa-2x"></i>Sign in with Google</li>
-                            </a>
-                        </ul>
-                    </div>
-
-                </form>
-            </div>
-            <div class="form-container register-container" id="register">
-                <div class="header">
-                    <div>SIGN UP</div>
-                </div>
-                <form action="" id="register">
-                    <div class="login-type">
-                        <div class="inputBox-signup">
+                        <div class="login-type">
                             <div class="inputBox">
-                                <input type="text" required="" id="username">
+                                <input type="text" name="userID" required="" id="username"/>
                                 <span>UserName</span>
-                                <!-- <span class="user">
-                            <i class='fas fa-user-circle' style='font-size:16px'></i>
-                            </span> -->
                             </div>
-                            <p class="mess-error"><span>Fullname is invalid</span></p>
-                        </div>
-
-                        <div class="inputBox-signup">
-
-                            <div class="inputBox">
-                                <input type="text" required="" id="username">
-                                <!-- <span class="user">
-                            <i class='fas fa-user-circle' style='font-size:16px'></i>
-                            </span> -->
-                                <span>FullName</span>
-                            </div>
-                            <p class="mess-error"><span>Username is duplicate</span></p>
-                        </div>
-                        <div class="inputBox-signup">
                             <div class="inputBox">
                                 <div class="password-input">
-                                    <input type="password" required="" id="password-text">
-                                    <!-- <span class="eye">
-                                    <i id="showPassword" class="fa-solid fa-eye"></i>
-                                      </span> -->
+                                    <input type="password" name="password" required="" id="password-text" />
                                     <span>Password</span>
                                 </div>
+                                <!-- <span class="eye">
+                                    <i id="showPassword" class="fa-solid fa-eye"></i>
+                                </span> -->
                             </div>
-                            <p class="mess-error"><span>Password must be 4 digits</span></p>
+                        </div>
+                        <li class="login-function">
+                            <span><input type="checkbox" onclick="saveInfo()">Remember Me</span>
+                            <a href="#" id="forgot-pass" onclick="forgot_pass()">Forgot Password?</a>
+                        </li>
+
+                        <div class="login-success">
+                            <input type="submit" name="action" value="Login"/>
+                        </div>
+                        <div class="other-login-icon">
+                            <div class="or-login">
+                                <div class="line"></div>
+                                <span>OR</span>
+                                <div class="line"></div>
+                            </div>
+                            <ul class="other-signin">
+                                <a href="#">
+                                    <li><i class="fab fa-google fa-2x"></i>Sign in with Google</li>
+                                </a>
+                            </ul>
                         </div>
 
-                        <div class="inputBox-signup">
-                            <div class="inputBox">
-                                <div class="password-input">
-                                    <input type="password" required="" id="password-text">
-                                    <!-- <span class="eye">
-                                    <i id="showPassword" class="fa-solid fa-eye"></i>
-                                    </span> -->
-                                    <span>Rewrite Password</span>
+                    </form>
+                </div>
+                <div class="form-container register-container" id="register">
+                    <div class="header">
+                        <div>SIGN UP</div>
+                    </div>
+                    <form action="MainController" id="register">
+                        <div class="login-type">
+                            <div class="inputBox-signup">
+                                <div class="inputBox">
+                                    <input type="text" name="userID" required=""/>
+                                    <span>UserName</span>
                                 </div>
                             </div>
-                            <p class="mess-error"><span>Password is invalid</span></p>
-                        </div>
-                        <div class="inputBox-signup">
 
-                            <div class="capcha">
-                                <div class="g-recaptcha" data-sitekey="6LfFfrAmAAAAAAoVKML2RbJgTbneNmLVmpWs0HU1"></div>
-                                <!-- <input type="submit" name="" id=""> -->
+                            <div class="inputBox-signup">
+                                <div class="inputBox">
+                                    <input type="text" name="fullName" required=""/>
+                                    <span>FullName</span>
+                                </div>
                             </div>
-                            <p class="mess-error"><span>Please Enter valid Capcha </span></p>
+
+                            <div class="inputBox-signup">
+                                <div class="inputBox">
+                                    <input type="text" name="" required="" value="US" readonly=""/>
+                                    <span>RoleID</span>
+                                </div>
+                            </div>
+
+                            <div class="inputBox-signup">
+                                <div class="inputBox">
+                                    <div class="password-input">
+                                        <input type="password" name="password" required="" />
+                                        <span>Password</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="inputBox-signup">
+                                <div class="inputBox">
+                                    <div class="password-input">
+                                        <input type="password" name="confirm" required=""/>
+                                        <span>Rewrite Password</span>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div class="inputBox-signup">
+                                <div class="capcha">
+                                    <div class="g-recaptcha" data-sitekey="6LfFfrAmAAAAAAoVKML2RbJgTbneNmLVmpWs0HU1" data-callback='onSubmit' 
+                                         data-action='submit' required="">Submit></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="login-success">
+                            <input type="submit" name="action" value="Create"/>
+
                         </div>
 
-                    </div>
-                    <div class="login-success">
-                        <input type="submit" value="SIGN UP">
-                    </div>
+                    </form>
+                </div>
 
-                </form>
-            </div>
-
-            <div class="overlay-container">
-                <div class="overlay">
-                    <div class="overlay-control overlay-left" id="dangky">
-                        <div class="test"></div>
-                        <h1>Flower is my love</h1>
-                        <button href="#" class="click" onclick="login_regis()">SIGN UP</button>
-                    </div>
-                    <div class="overlay-control overlay-right" id="dangnhap">
-                        <h1>Ready For Us</h1>
-                        <button class="click" onclick="login_regis()">SIGN IN </button>
+                <div class="overlay-container">
+                    <div class="overlay">
+                        <div class="overlay-control overlay-left" id="dangky">
+                            <div class="test"></div>
+                            <h1>Flower is my love</h1>
+                            <button href="#" class="click" onclick="login_regis()">SIGN UP</button>
+                            <!--<a href="MainController?action=CreatePage" class="click" onclick="login_regis()" >Create</a>-->
+                        </div>
+                        <div class="overlay-control overlay-right" id="dangnhap">
+                            <h1>Ready For Us</h1>
+                            <button class="click" onclick="login_regis()">SIGN IN </button>
+                        </div>
                     </div>
                 </div>
             </div>
+
         </div>
 
-    </div>
+        <div class="pop-up" id="popup">
+            <a href="#" onclick="hide()" id="close"><i class="fa fa-close" style="font-size:32px"></i></a>
+            <h2>Forgot Password</h2>
 
-    <div class="pop-up" id="popup">
-        <a href="#" onclick="hide()" id="close"><i class="fa fa-close" style="font-size:32px"></i></a>
-        <h2>Forgot Password</h2>
+            <p style="text-align: start;">Email</p>
+            <input type="" placeholder="Username" required="" id="username" style="border: 2px solid black; width: 81%;">
+            <span class="user"
+                  style="background-color: yellow; border: 2px solid black; padding: 6px 15px; border-radius: 5px;">
+                <i class="fa fa-paper-plane" aria-hidden="true"></i>
+            </span>
 
-        <p style="text-align: start;">Email</p>
-        <input type="" placeholder="Username" required="" id="username" style="border: 2px solid black; width: 81%;">
-        <span class="user"
-            style="background-color: yellow; border: 2px solid black; padding: 6px 15px; border-radius: 5px;">
-            <i class="fa fa-paper-plane" aria-hidden="true"></i>
-        </span>
+            <p>Mã xác nhận (được gửi về Email)</p>
+            <input type="" placeholder="Username" required="" id="username" style="border: 2px solid black;">
+            <p style="margin-top: 0; margin-bottom: 10px;">Bạn vẫn chưa nhận được mã? <span
+                    style="color:rgb(255,139,139);">Gửi lại</span></p>
 
-        <p>Mã xác nhận (được gửi về Email)</p>
-        <input type="" placeholder="Username" required="" id="username" style="border: 2px solid black;">
-        <p style="margin-top: 0; margin-bottom: 10px;">Bạn vẫn chưa nhận được mã? <span
-                style="color:rgb(255,139,139);">Gửi lại</span></p>
-
-        <input type="submit" value="SEND">
-    </div>
+            <input type="submit" value="SEND">
+        </div>
 
 
-    <script src="./assets/js/bootstrap/jquery.min.js"></script>
-    <script src="./assets/js/bootstrap/popper.min.js"></script>
-    <script src="./assets/js/bootstrap/bootstrap.min.js"></script>
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    <script src="./assets/js/bootstrap/code.js"></script>
-    <script src="./assets/js/bootstrap/login.js"></script>
-    <script src="./assets/js/bootstrap/saveInfo.js"></script>
-</body>
+        <script src="assets/js/bootstrap/jquery.min.js"></script>
+        <script src="assets/js/bootstrap/popper.min.js"></script>
+        <script src="assets/js/bootstrap/bootstrap.min.js"></script>
+        <script src="https://www.google.com/recaptcha/api.js"></script>
+        <script src=".assets/js/bootstrap/code.js"></script>
+        <script src="assets/js/jvscript/login.js"></script>
+        <script src=".assets/js/bootstrap/saveInfo.js"></script>
+    </body>
 
 
 </html>
