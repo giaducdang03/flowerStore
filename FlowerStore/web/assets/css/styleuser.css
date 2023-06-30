@@ -83,7 +83,7 @@
     padding-left: 20px;
 }
 
-.body-main .left-bar .service .list-service a:nth-child(2) {
+.body-main .left-bar .service .list-service a:nth-child(1) {
     background-color: #f7dad9;
     box-shadow: 0 4px 5px -2px gray;
 }
@@ -116,10 +116,21 @@
 }
 
 .right-bar .user-list .user-list-table td input {
-    width: 210px;
+    width: 250px;
     padding-left: 5px;
 }
 
+
+.right-bar .user-list .user-list-table td input[type='submit']{
+    border: none;
+    padding: 3px;
+    width: 100px;
+    background-color: #f7dad9;
+}
+
+.right-bar .user-list .user-list-table td input[type='submit']:hover {
+    background-color: #ff8581;
+}
 
 
 
