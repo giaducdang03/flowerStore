@@ -156,14 +156,16 @@ input[type="submit"] {
     cursor: pointer;
     padding: 8px;
     /* border-radius: 10px; */
-    background-color: #1a73e8;
+    /* background-color: #1a73e8; */
+    background-color: #FF9494;
     color: white;
     font-weight: bold;
     text-align: center;
 }
 
 input[type="submit"]:hover {
-    background-color: #1867ce;
+    /* background-color: #1867ce; */
+    background-color: #ff8484;
 }
 
 .outline .background-url .login-container .login-type {
@@ -266,7 +268,7 @@ input[type='checkbox'] {
 
 
 .background-url .login-success input {
-    width: 40%;
+    width: 90%;
     padding: 5px;
     letter-spacing: 1px;
 }
@@ -425,6 +427,10 @@ input[type='checkbox'] {
     /* width: 50%; */
 
     /* margin: 0 5px; */
+}
+
+.login-container .other-signin li i {
+    font-size: 22px;
 }
 
 
