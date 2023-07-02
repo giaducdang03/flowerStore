@@ -39,7 +39,7 @@
                 <div class="right-nav col-md-2">
                     <div class="account">
                         <div class="logo-admin">
-                            <img src="./assets/img/admin/avt-admin.png" alt="" width="60px">
+                            <img src="./assets/img/user/avt-user.png" alt="" width="70px">
                         </div>
                         <div class="admin-text">
                             <p>USER</p>
@@ -84,21 +84,28 @@
                                 <td>duongbao2k3</td>
                             </tr>
                             <tr>
-                                <td>Full name:</td>
-                                <td><input type="text" value="Duong Ton Bao"></td>
+                                <td>Full Name:</td>
+                                <td><input type="text" name="fullName" value="Duong Ton Bao"></td>
                             </tr>
                             <tr>
-                                <td>Role ID:</td>
-                                <td>US</td>
+                                <td>Address:</td>
+                                <td>
+                                    <input type="text" name="address" value="Vung Tau">
+                                </td>
                             </tr>
-                            <tr>
+                            <tr class="password">
                                 <td>Password:</td>
-                                <td>123456</td>
-                                <td><a href="">Change Password</a></td>
+                                <td>
+                                    <input type="password" value="123456" required="" id="password-text" readonly="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><input onclick="showPassword()" style="width: auto;" type="checkbox"/> <span style="font-size: 15px;">Show password</span></td>
                             </tr>
                             <tr>
                                 <td>Email:</td>
-                                <td><input type="text" value="duongbao2k3@gmail.com"></td>
+                                <td><input type="email" name="email" value="duongbao2k3@gmail.com"></td>
                             </tr>
                             <tr>
                                 <td>
@@ -164,14 +171,19 @@
     </div>
     </div>
 
-
-
-
-
-
     <script src="./assets/js/bootstrap/jquery.min.js"></script>
     <script src="./assets/js/bootstrap/popper.min.js"></script>
     <script src="./assets/js/bootstrap/bootstrap.min.js"></script>
+    <script>
+        function showPassword() {
+          var x = document.getElementById("password-text");
+          if (x.type === "password") {
+            x.type = "text";
+          } else {
+            x.type = "password";
+          }
+        }
+    </script>
 </body>
 
 </html>
