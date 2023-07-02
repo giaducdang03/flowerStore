@@ -56,7 +56,11 @@ body {
 .header_main .account .admin-text p{
     margin: 0;
     text-align: start;
-    margin-left: 7px;
+    margin-left: 10px;
+}
+
+.header_main .account .admin-text p:first-child{
+    font-weight: bold;
 }
 
  .bell {
@@ -104,6 +108,7 @@ body {
 .body-main .right-bar .info {
     margin-top: 50px;
     color: #929293;
+    font-weight: bold;
     font-size: 17px;
     margin-left: 30px;
 }
@@ -150,7 +155,7 @@ body {
 .body-main .right-bar .user-list input[type='text'] {
     width: 250px;
     padding: 0 20px;
-    border-radius: 7px;
+    /* border-radius: 7px; */
     padding: 3px;
     background-color: #f2f6fa;
     border: none;
@@ -160,7 +165,7 @@ body {
 .body-main .right-bar .user-list input[type='submit'] {
     right: 20px;
     border: none;
-    padding: 3px;
+    padding: 3px 5px;
     background-color: #f2f6fa;
 }
 
@@ -216,26 +221,52 @@ tr:first-child {
     font-weight: 900;
 }
 
+.table .name input {
+    min-width: 280px;
+}
+
+.table .address {
+    min-width: 200px;
+}
+
+.table select {
+    padding: 3px;
+}
+
 .action {
     display: flex;
     justify-content: space-evenly;
 }
 
-.action .update input{
+.action .update button{
     padding: 0 15px;
     border: none;
     color: #31c6cf;
     background-color: #f2f6fa;
-    font-weight: 900;
+    outline: none;
+    /* font-size: 15px; */
+    /* font-weight: 600; */
 
 }
-.action .delete input{
+.action .delete button{
     padding: 0 15px;
     border: none;
     color: #f58888;
     background-color: #f2f6fa;
-    font-weight: 900;
+    outline: none;
+    /* font-size: 15px; */
+    /* font-weight: 600; */
 
+}
+
+.action .update:hover button{
+    background-color: #3a9397;
+    color: #fff;
+}
+
+.action .delete:hover button{
+    background-color: #ff8383;
+    color: #fff;
 }
 
 .action .update:active {
@@ -245,6 +276,7 @@ tr:first-child {
 .action .delete:active {
     transform: scale(0.93);
 }
+
 
 
 

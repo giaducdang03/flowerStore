@@ -23,7 +23,7 @@
             <nav class="navbar navbar-expand-lg">
                 <div class="logo col-md-2">
                     <a class="navbar-brand" href="#"><img
-                            src="./assets/img/admin/cropped-cropped-2021-FPTU-Long-768x239.png" alt width="130px"></a>
+                            src="./assets/img/logo/lily-lane-logo-web.png" alt width="100px"></a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -100,44 +100,67 @@
                         <tr>
                             <td>No</td>
                             <td>User ID</td>
+                            <td>Full Name</td>
                             <td>Role ID</td>
-                            <td>Password</td>
+                            <td>Address</td>
                             <td>Email</td>
                             <td style="text-align: center;">Action</td>
                         </tr>
-                        <form action="">
+                        <form action="" onsubmit="return false">
                             <tr style="background-color: white; border: none;">
                                 <td>1</td>
-                                <td>duongbao2k3@gmail.com</td>
-                                <td><input type="text" value="AD"></td>
-                                <td>12345</td>
+                                <td class="userID">duongbao2k3</td>
+                                <td class="name">
+                                    <input type="text" name="fullName" value="Duong Ton Bao (K17 HCM)"/>
+                                </td>
+                                <td>
+                                    <select name="" id="">
+                                        <option value="AD">Admin</option>
+                                        <option value="US">User</option>
+                                    </select>
+                                    <!-- <input type="text" value="AD"> -->
+                                </td>
+                                <td class="address">Vung Tau</td>
                                 <td>duongbao2k3@gmail.com</td>
                                 <td class="action">
                                     <div class="update">
-                                        <input type="submit" value="Update">
+                                        <input type="hidden" value="Update">
+                                        <button><i class="fa-solid fa-pen-to-square"></i></button>
                                     </div>
                                     <div class="delete">
-                                        <input type="submit" value="Delete">
+                                        <input type="hidden" value="Delete">
+                                        <button><i class="fa-solid fa-trash-can"></i></button>
                                     </div>
                                 </td>
                             </tr>
 
-                            <tr style="background-color: white;">
-                                <td>2</td>
-                                <td>ducxautry</td>
-                                <td><input type="text" value="AD"></td>
-                                <td>12345</td>
-                                <td>ducxautry2k3@gmail.com</td>
+                            <tr style="background-color: white; border: none;">
+                                <td>1</td>
+                                <td class="userID">ducdeptry</td>
+                                <td class="name">
+                                    <input type="text" name="fullName" value="Dang Phan Gia Duc (K17 HCM)"/>
+                                </td>
+                                <td>
+                                    <select name="" id="">
+                                        <option value="AD">Admin</option>
+                                        <option value="US">User</option>
+                                    </select>
+                                    <!-- <input type="text" value="AD"> -->
+                                </td>
+                                <td class="address">Can Giuoc, Long An</td>
+                                <td>danggiaduc@gmail.com</td>
                                 <td class="action">
                                     <div class="update">
-                                        <input type="submit" value="Update">
+                                        <input type="hidden" value="Update">
+                                        <button><i class="fa-solid fa-pen-to-square"></i></button>
                                     </div>
                                     <div class="delete">
-                                        <input type="submit" value="Delete">
+                                        <input type="hidden" value="Delete">
+                                        <button><i class="fa-solid fa-trash-can"></i></button>
                                     </div>
                                 </td>
-
                             </tr>
+
                         </form>
                     </table>
 

@@ -22,13 +22,20 @@
 }
 
 body {
+    background-image: url('../img/banner/banner1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* body {
     display: flex;
     align-items: center;
     height: 100vh;
-}
+} */
 
 
-.background-img {
+/* .background-img {
     position: fixed;
     left: 0;
     right: 0;
@@ -39,7 +46,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     filter: blur(2px);
-}
+} */
 
 
 
@@ -90,7 +97,7 @@ body {
 
 .outline {
     width: 100%;
-    min-height: 650px; 
+    min-height: 800px;
     display: flex;
     align-items: center;
 }
@@ -121,7 +128,7 @@ body {
 .outline .background-url .header {
     color: black;
     font-weight: 900;
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin-bottom: 15px;
 }
 
@@ -156,14 +163,16 @@ input[type="submit"] {
     cursor: pointer;
     padding: 8px;
     /* border-radius: 10px; */
-    background-color: #1a73e8;
+    /* background-color: #1a73e8; */
+    background-color: #FF9494;
     color: white;
     font-weight: bold;
     text-align: center;
 }
 
 input[type="submit"]:hover {
-    background-color: #1867ce;
+    /* background-color: #1867ce; */
+    background-color: #ff8484;
 }
 
 .outline .background-url .login-container .login-type {
@@ -266,7 +275,7 @@ input[type='checkbox'] {
 
 
 .background-url .login-success input {
-    width: 40%;
+    width: 90%;
     padding: 5px;
     letter-spacing: 1px;
 }
@@ -324,7 +333,7 @@ input[type='checkbox'] {
 
 .overlay-container .overlay {
     /* background-image: url("./ferrar3.jpg"); */
-    background: linear-gradient(to right, #ff6b6b, white);
+    background: linear-gradient(to right, #ff6b6b, #948378);
     background-repeat: no-repeat;
     background-size: cover;
     /* z-index: 0; */
@@ -358,6 +367,9 @@ input[type='checkbox'] {
 .overlay-container .overlay .overlay-control h1 {
     font-size: 45px;
     font-weight: 900;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
 }
 
 .overlay-container .overlay .overlay-right {
@@ -401,9 +413,19 @@ input[type='checkbox'] {
 }
 
 .login-container .other-signin {
-    border: 1px solid black;
+    border: 1px solid rgba(0, 0, 0, 0.26);
     width: 60%;
     margin: 0 auto;
+    padding: 2px;
+}
+
+.login-container .other-signin li {
+    color: #000000;
+    font-weight: 550;
+}
+
+.login-container .other-signin li i {
+    font-size: 22px;
 }
 
 .login-container .other-signin:hover {
@@ -426,6 +448,8 @@ input[type='checkbox'] {
 
     /* margin: 0 5px; */
 }
+
+
 
 
 

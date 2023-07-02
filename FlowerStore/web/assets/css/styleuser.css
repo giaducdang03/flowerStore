@@ -61,6 +61,11 @@
     text-align: center;
 }
 
+.body-main .left-bar a:hover {
+    text-decoration: none;
+    background-color: #f7dad9;
+    box-shadow: 0 4px 5px -2px gray;
+}
 
 .body-main .left-bar {
     background-color: white;
@@ -69,13 +74,14 @@
     padding: 0;
 }
 
-
 .body-main .left-bar .service .list-service {
     list-style-type: none;
     margin-top: 50px;
     display: flex;
     flex-direction: column;
 }
+
+
 
 .body-main .left-bar .service .list-service a{
     color: black;
@@ -93,6 +99,7 @@
     margin-top: 50px;
     color: #929293;
     font-size: 17px;
+    font-weight: bold;
     margin-left: 30px;
 }
 
@@ -130,6 +137,11 @@
 
 .right-bar .user-list .user-list-table td input[type='submit']:hover {
     background-color: #ff8581;
+}
+
+.right-bar .user-list .user-list-table .password td input{
+    width: 230px;
+    border: none;
 }
 
 
