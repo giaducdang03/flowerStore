@@ -27,7 +27,7 @@
     height: 30px;
     background-color: #f5f5f5;
     width: 100%;
-    
+
 }
 
 #header #header-content {
@@ -41,16 +41,16 @@
     margin: 0;
 }
 
-#header #header-content .phone{
+#header #header-content .phone {
     flex: 1;
     padding-left: 30px;
 }
 
-#header #header-content .signal{
+#header #header-content .signal {
     font-style: oblique;
 }
 
-#header #header-content .mail{
+#header #header-content .mail {
     /* flex: 5; */
 }
 
@@ -418,7 +418,7 @@ a:hover {
     bottom: 20px;
     color: black;
     padding: 5px 0;
-    
+
 }
 
 .best-seller-product .best-seller-product-list form {
@@ -436,33 +436,69 @@ p {
 
 .best-add-to-cart {
     width: 100%;
-    min-height: 400px;
-    top:0;
+    height: 400px;
+    top: 0;
     left: -100%;
+    top: -200%;
     position: absolute;
-    backdrop-filter: blur(2px);
     color: white;
-    padding: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: .2s;
     z-index: -1;
+    border: none;
+    outline: none;
 }
+
+.best-add-to-cart input {
+    border: none !important;
+    background-color: transparent;
+}
+
+.best-add-to-cart .cart-service {
+    display: flex;
+    position: absolute;
+    bottom: -90px;
+    width: 100%;
+}
+
+.best-add-to-cart .cart-service button {
+    border: none;
+    border-right: 1px solid black;
+    background-color: transparent;
+    width: 90px;
+    outline: none;
+}
+
+.best-add-to-cart .cart-service button:last-child {
+    border: none;
+    border-left: 1px solid black;
+    background-color: transparent;
+    width: 90px;
+    text-align: center;
+    outline: none;
+}
+
+
 
 .best-seller-product-list:hover .best-add-to-cart {
     left: 0;
 }
 
-.best-seller-product-list:hover .best-add-to-cart input{
-    width: 80%;
+.best-seller-product-list:hover .best-add-to-cart input {
+    width: 100%;
     padding: 5px 0;
-    border: none;
     font-weight: 900;
     transition: transform .2s;
 }
 
 .best-seller-product-list:hover .best-add-to-cart input:hover {
+    background-color: #e55472;
+    color: white;
+}
+
+.best-seller-product-list:hover .best-add-to-cart button:hover {
     background-color: #e55472;
     color: white;
 }
