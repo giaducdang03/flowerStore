@@ -14,8 +14,8 @@
     <!-- boostrap -->
     <link rel="stylesheet" href="./assets/css/bootstrap.min/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/font/css/all.css">
-    <link rel="stylesheet" href="./assets/css/stylecheckout.css">
     <link rel="stylesheet" href="./assets/css/stylehome.css">
+    <link rel="stylesheet" href="./assets/css/stylecheckout.css">
 
 </head>
 
@@ -227,42 +227,9 @@
                                         </td>
                                         <td>$18.00</td>
                                         <td>$18.00</td>
-
-
-
                                     </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="product">
-                                                <img src="./assets/img/best-seller/Autumn-basket.webp" alt width="70px"
-                                                    height="70px">
-                                                <p>Autumn basket</p>
-                                            </div>
-                                        </td>
-                                        <td class="quantity">
-                                            <input type="number" value="1" min="1" readonly>
-                                        </td>
-                                        <td>$18.00</td>
-                                        <td>$18.00</td>
-
-
-
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="product">
-                                                <img src="./assets/img/best-seller/Autumn-basket.webp" alt width="70px"
-                                                    height="70px">
-                                                <p>Autumn basket</p>
-                                            </div>
-                                        </td>
-                                        <td class="quantity">
-                                            <input type="number" value="1" min="1" readonly>
-                                        </td>
-                                        <td>$18.00</td>
-                                        <td>$18.00</td>
-
-
+                                    <tr class="back-to-cart"> 
+                                        <td><a href=""><i class="fa-solid fa-arrow-left-long"></i> Back to Cart</a></td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -278,13 +245,46 @@
                                 <tbody>
                                     <tr>
                                         <td>
-                                            <div class="vnpay">
-                                                <div class="vnpay-group">
-                                                    <img src="./assets/img/logo/202166185_2021396718013233_8499389898242103910_n.png"
-                                                        alt="" width="20%">
-                                                    <p>VNPAY</p>
-                                                </div>
-                                                <input type="checkbox" name="" id="" readonly>
+                                            <div class="vnpay-method">
+                                                <label class="vnpay">
+                                                    <input type="radio" readonly name="payment-method" value="vnpay">
+                                                    <span class="radio-fake"></span>
+                                                    <span class="lable">
+                                                        <div style="cursor: pointer; height: 64px;">
+                                                            <div class="payment-method_detail">
+                                                                <img src="./assets/img/checkout/vnpay.png" alt="" width="40px">
+                                                                <div style="margin-right: 12px;">
+                                                                    <div class="payment-method_title">
+                                                                        <span>Payment with VNPAY</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="vnpay-method">
+                                                <label class="vnpay">
+                                                    <input type="radio" readonly name="payment-method" value="vnpay">
+                                                    <span class="radio-fake"></span>
+                                                    <span class="lable">
+                                                        <div style="cursor: pointer; height: 64px;">
+                                                            <div class="payment-method_detail">
+                                                                <img src="./assets/img/checkout/cash-delivery.png" alt="" width="40px">
+                                                                <div style="margin-right: 12px;">
+                                                                    <div class="payment-method_title">
+                                                                        <span>Payment on delivery (COD)</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </span>
+                                                </label>
                                             </div>
                                         </td>
 
@@ -316,8 +316,8 @@
             <div class="row footer">
                 <div class="col-md-3" style="margin: auto;">
                     <div style="text-align: center;">
-                        <img src="./assets/img/logo/353377363_270213872326179_7859750982400627396_n.png" alt=""
-                            style="width: 120%;">
+                        <img src="./assets/img/logo/lily-lane-logo-web.png" alt=""
+                            style="width: 250px;">
                     </div>
                 </div>
 

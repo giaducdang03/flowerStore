@@ -103,27 +103,37 @@
     align-items: center;
 }
 
-.table-cart .action .update {
-    padding-right: 10px;
+.fa-solid {
+    padding-right: 0;
 }
 
-.table-cart .action .update button {
+.table-cart .action .update button{
     padding: 0 15px;
     border: none;
     color: #31c6cf;
     background-color: #f2f6fa;
-    font-weight: 900;
+    outline: none;
 
 }
-
-.table-cart .action .delete button {
+.table-cart .action .delete button{
     padding: 0 15px;
     border: none;
     color: #f58888;
     background-color: #f2f6fa;
-    font-weight: 900;
+    outline: none;
 
 }
+
+.table-cart .action .update:hover button{
+    background-color: #3a9397;
+    color: #fff;
+}
+
+.table-cart .action .delete:hover button{
+    background-color: #ff8383;
+    color: #fff;
+}
+
 
 .table-cart .action .update:active {
     transform: scale(0.93);
@@ -181,7 +191,7 @@ td {
     border: none;
     width: 100%;
     padding: 7px 0;
-    background-color: #ff9898;
+    background-color: #FF9494;
     color: white;
     font-weight: 900;
 }
@@ -203,7 +213,7 @@ td {
 }
 
 .check-out input:hover {
-    background-color: #fbbebe;
+    background-color: #ff8484;
 }
 
 .buy-more input:hover {

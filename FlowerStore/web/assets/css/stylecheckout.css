@@ -64,7 +64,7 @@
 }
 
 .table-cart {
-    width: 70%;
+    width: 68%;
     float: left;
     /* padding: 10px; */
     background-color: white;
@@ -90,7 +90,12 @@
 }
 
 .table-cart thead th:first-child {
-    width: 400px;
+    max-width: 350px;
+    min-width: 300px;
+}
+
+td {
+    padding: 13px 15px;
 }
 
 .table-cart .product {
@@ -100,9 +105,9 @@
 }
 
 .table-cart .product p {
-    padding-left: 5px;
+    padding-left: 10px;
     margin: 0;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .table-cart .quantity input {
@@ -110,9 +115,13 @@
     width: 60px;
 }
 
+.table-cart .back-to-cart td {
+    text-align: left;
+    width: 60px;
+}
 
-td {
-    padding: 13px 15px;
+.table-cart .back-to-cart a {
+    color: #000000;
 }
 
 .checkout p {
@@ -124,17 +133,99 @@ td {
 
 
 .table-checkout {
-    width: 28%;
+    width: 30%;
     margin: 0 auto;
     margin: 0;
     float: right;
     background-color: white;
 }
 
-.table-checkout .vnpay {
+.table-checkout .vnpay-method {
+
+}
+
+.table-checkout .vnpay-method label {
     display: flex;
+    -webkit-box-align: center;
     align-items: center;
-    justify-content: space-evenly;
+}
+
+.table-checkout .vnpay-method label input[type='radio'] {
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    visibility: hidden;
+    clip: rect(0px, 0px, 0px, 0px);
+    opacity: 0;
+}
+
+.table-checkout .vnpay-method input[type="radio"]:checked + .radio-fake {
+    border-color: rgb(11, 116, 229);
+}
+
+.table-checkout .vnpay-method input[type="radio"]:checked + .radio-fake::before {
+    transform: scale(1);
+}
+
+.table-checkout .vnpay-method .radio-fake {
+    width: 18px;
+    height: 18px;
+    border: 1px solid rgb(196, 196, 207);
+    border-radius: 50%;
+    margin-right: 5px;
+    position: relative;
+    z-index: 1;
+    color: rgb(120, 120, 120);
+    flex-shrink: 0;
+    cursor: pointer;
+}
+
+.table-checkout .vnpay-method .radio-fake::before {
+    content: "";
+    position: absolute;
+    left: 4px;
+    top: 4px;
+    width: 8px;
+    height: 8px;
+    background-color: rgb(11, 116, 229);
+    border-radius: 50%;
+    transform: scale(0);
+    transition: transform 0.3s ease 0s;
+}
+
+.table-checkout .vnpay-method .vnpay span .lable {
+    font-size: 14px;
+    line-height: 20px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.table-checkout .vnpay-method .vnpay .payment-method_detail {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    height: 100%;
+}
+
+.table-checkout .vnpay-method .vnpay .payment-method_detail img {
+    margin-right: 12px;
+    object-fit: contain;
+}
+
+.table-checkout .vnpay-method .vnpay .payment-method_title {
+    font-size: 15px;
+    line-height: 20px;
+    color: rgb(56, 56, 61);
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.table-checkout .vnpay {
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: space-evenly; */
     border: 2px solid #CCCCCC;
     padding: 5px;
     border-radius: 10px;
@@ -143,6 +234,7 @@ td {
 
 .table-checkout .vnpay p {
     margin: 0;
+    color: #000000;
 }
 
 .table-checkout .vnpay .vnpay-group {
@@ -157,9 +249,11 @@ td {
 }
 
 .table-checkout .terms p {
-    font-size: 12px;
+    font-size: 15px;
     margin: 0;
-    padding-left: 2px;
+    padding-left: 10px;
+    color: #000000;
+    font-weight: normal;
 }
 
 .table-checkout .check-terms {
