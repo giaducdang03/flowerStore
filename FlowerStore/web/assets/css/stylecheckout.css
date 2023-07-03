@@ -47,7 +47,7 @@
 
 .background-container {
     background-color: #f4f4f4;
-    min-height: 150vh;
+    min-height: 100vh;
 }
 
 
@@ -140,6 +140,10 @@ td {
     background-color: white;
 }
 
+.table-checkout .payment td {
+    padding: 2px 15px;
+}
+
 .table-checkout .vnpay-method {
 
 }
@@ -214,7 +218,7 @@ td {
 }
 
 .table-checkout .vnpay-method .vnpay .payment-method_title {
-    font-size: 15px;
+    font-size: 16px;
     line-height: 20px;
     color: rgb(56, 56, 61);
     display: flex;
@@ -290,7 +294,7 @@ td {
     border: none;
     width: 100%;
     padding: 7px 0;
-    background-color: #ff9898;
+    background-color: #FF9494;
     color: white;
     font-weight: 900;
 }
@@ -312,7 +316,7 @@ td {
 }
 
 .check-out input:hover {
-    background-color: #fbbebe;
+    background-color: #ff8484;
 }
 
 .buy-more input:hover {
@@ -328,33 +332,31 @@ td {
     font-weight: 900;
 }
 
-/* cart null */
-.empty-cart {
-    text-align: center;
+/* checkout no login */
+
+.checkout-nologin {
+    background-color: #f4f4f4;
+    min-height: 60vh;
+}
+
+
+.checkout-nologin .row {
+    width: 100%;
     margin-bottom: 50px;
+    background-color: #f4f4f4;
+
 }
 
-.empty-cart img {
-    width: 30%;
+.noti-checkout {
+    margin-top: 20px;
 }
 
-.empty-cart h3 {
+.noti-checkout h4 {
     font-size: 20px;
-    margin-top: 30px;
-    margin-bottom: 20px;
-    color: #8b8b8b;
 }
 
-.empty-cart a {
-    background-color: #f58888dc;
-    color: #000000;
-    padding: 8px 15px;
+.noti-checkout a {
     font-size: 18px;
-    text-decoration: none;
-    border-radius: 5px;
+    color: #FF6B6B;
 }
 
-.empty-cart a:hover {
-    background-color: #f58888;
-
-}
