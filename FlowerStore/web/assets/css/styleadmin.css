@@ -229,6 +229,10 @@ tr:first-child {
     min-width: 200px;
 }
 
+.table .role input {
+    max-width: 100px;
+}
+
 .table select {
     padding: 3px;
 }
