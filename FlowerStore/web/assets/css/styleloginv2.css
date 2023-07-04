@@ -140,11 +140,10 @@ body {
 input {
     width: 90%;
     padding: 5px;
-    /* border-radius: 7px; */
-    /* border: none; */
-    /* border-top-color: #dfe0e4; */
     border-color: rgba(0, 0, 0, 0.18);
+    border: 1px solid;
     text-align: start;
+    outline: none;
 }
 
 .login-container input[type="text"] {
@@ -162,8 +161,6 @@ input[type="submit"] {
     border: none;
     cursor: pointer;
     padding: 8px;
-    /* border-radius: 10px; */
-    /* background-color: #1a73e8; */
     background-color: #FF9494;
     color: white;
     font-weight: bold;
@@ -171,13 +168,9 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    /* background-color: #1867ce; */
     background-color: #ff8484;
 }
 
-.outline .background-url .login-container .login-type {
-    /* margin-bottom: 10px; */
-}
 
 .outline .background-url .login-type {
     display:flex;
@@ -258,7 +251,7 @@ input[type="submit"]:hover {
 
 
 .background-url .login-container .login-function span {
-    font-size: 16px;
+    font-size: 15px;
     float: left;
 }
 
@@ -363,12 +356,7 @@ input[type='checkbox'] {
     justify-content: space-evenly;
     padding: 5px;
     font-size: 17px;
-    /* width: 50%; */
-
-    /* margin: 0 5px; */
 }
-
-
 
 
 
@@ -433,7 +421,7 @@ input[type='checkbox'] {
     bottom: 50%;
     left: 0;
     right: 0;
-    z-index: 4;
+    z-index: 999;
     animation: fadeIn ease-in 0.2s;
     display: none;
 }
@@ -520,7 +508,7 @@ input[type='checkbox'] {
 
 
 .inputBox input:active {
-    border: 1px solid rgb(0, 140, 255);
+    /* border: 1px solid rgb(0, 140, 255); */
 }
 
 .inputBox input:valid, 

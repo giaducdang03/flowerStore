@@ -1,332 +1,328 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Login Flower</title>
-        <!-- Google font -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400&display=swap"
-              rel="stylesheet">
-        <!-- <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'> -->
-        <!-- boostrap -->
-        <link rel="stylesheet" href="assets/css/bootstrap.min/bootstrap.min.css">
-        <link rel="stylesheet" href="assets/css/font/css/all.css">
-        <link rel="stylesheet" href="assets/css/stylecart.css">
-        <!-- <link rel="icon" type="image/x-icon" href="./assets/logo/icon-web.png">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Flower</title>
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400&display=swap"
+        rel="stylesheet">
+    <!-- <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'> -->
+    <!-- boostrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/font/css/all.css">
+    <link rel="stylesheet" href="assets/css/stylecart.css">
+    <!-- <link rel="icon" type="image/x-icon" href="./assets/logo/icon-web.png">
         <link rel="stylesheet" href="./assets/css/bootstrap.min/bootstrap.min.css">
         <link rel="stylesheet" href="./assets/css/font/css/all.css"> -->
-        <link rel="stylesheet" href="./assets/css/stylehome.css">
-        <link rel="stylesheet" href="./assets/css/styleloginv2.css">
-    </head>
+    <link rel="stylesheet" href="./assets/css/stylehome.css">
+    <link rel="stylesheet" href="./assets/css/styleloginv2.css">
+</head>
 
-    <body onload="getCookiedata()">
-        <div class="container-fluid header_main">
-            <div class="container-fluid navbar-content">
-                <nav class="navbar navbar-expand-lg">
-                    <div class="logo col-md-3">
-                        <a class="navbar-brand" href="#"><img src="./assets/img/logo/lily-lane-logo-web.png" alt
-                                width="100px"></a>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse"
-                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                    </div>
-                    <div class="service col-md-6 collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav mr-auto">
-                            <li class=" nav-item ">
-                                <a class="nav-link active" href="#">Home</span></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Flower Gallery</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Service</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">About us</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="right-nav nav-item col-md-3">
-                        <ul class="col-md-5 cart navbar-nav mr-auto">
-                            <li class="nav-item" style="padding: 0;">
-                                <a class="nav-link" href="#" style="font-size: 20px;"><i
-                                        class="fa-solid fa-cart-shopping"></i></a>
-                            </li>
-                        </ul>
-                        <div class="col-md-7 account">
-                            <a href="#"><i class="fa-solid fa-user"></i> Đăng nhập</a>
-                        </div>
-                    </div>
-                </nav>
-            </div>
-        </div>
-        <!-- end: header  -->
-        <!-- Header & navbar  -->
-        <div class="background-img"></div>
-        <div class="outline">
-            <div class="background-url" id="container">
-                <div class="form-container  login-container" id="login">
-                    <form action="MainController" style="top: 60px;" method="POST">
-                        <div class="header">
-                            <div>SIGN IN</div>
-                        </div>
-                        <div class="login-type">
-                            <div class="inputBox">
-                                <input type="text" name="userID" required="" id="username"/>
-                                <span>UserName</span>
-                            </div>
-                            <div class="inputBox">
-                                <div class="password-input">
-                                    <input type="password" name="password" required="" id="password-text" />
-                                    <span>Password</span>
-                                </div>
-                                <!-- <span class="eye">
-                                    <i id="showPassword" class="fa-solid fa-eye"></i>
-                                </span> -->
-                            </div>
-                        </div>
-                        <li class="login-function">
-                            <span><input type="checkbox" onclick="saveInfo()">Remember Me</span>
-                            <a href="#" id="forgot-pass" onclick="forgot_pass()">Forgot Password?</a>
-                        </li>
-
-                        <div class="login-success">
-                            <input type="submit" name="action" value="Login"/>
-                        </div>
-                        <div class="other-login-icon">
-                            <div class="or-login">
-                                <div class="line"></div>
-                                <span>OR</span>
-                                <div class="line"></div>
-                            </div>
-                            <ul class="other-signin">
-                                <a href="#">
-                                    <li><i class="fab fa-google"></i>Continue with Google</li>
-                                </a>
-                            </ul>
-                        </div>
-
-                    </form>
-                </div>
-                <div class="form-container register-container" id="register">
-                    <div class="header">
-                        <div>SIGN UP</div>
-                    </div>
-                    <form action="MainController" id="register">
-                        <div class="login-type">
-                            <div class="inputBox-signup">
-                                <div class="inputBox">
-                                    <input type="text" name="userID" required=""/>
-                                    <span>UserName</span>
-                                </div>
-                            </div>
-
-                            <div class="inputBox-signup">
-                                <div class="inputBox">
-                                    <input type="text" name="fullName" required=""/>
-                                    <span>FullName</span>
-                                </div>
-                            </div>
-
-                            <div class="inputBox-signup">
-                                <div class="inputBox">
-                                    <input type="email" name="email" required=""/>
-                                    <span>Email</span>
-                                </div>
-                            </div>
-
-                            <div class="inputBox-signup">
-                                <div class="inputBox">
-                                    <div class="password-input">
-                                        <input type="password" name="password" required="" />
-                                        <span>Password</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="inputBox-signup">
-                                <div class="inputBox">
-                                    <div class="password-input">
-                                        <input type="password" name="confirm" required=""/>
-                                        <span>Rewrite Password</span>
-                                    </div>
-
-                                </div>
-
-                            </div>
-                            <div class="inputBox-signup">
-                                <div class="capcha">
-                                    <div class="g-recaptcha" data-sitekey="6LfFfrAmAAAAAAoVKML2RbJgTbneNmLVmpWs0HU1" data-callback='onSubmit' 
-                                         data-action='submit' required="">Submit></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="login-success">
-                            <input type="submit" name="action" value="Sign Up"/>
-                            <input type="hidden" name="roleID" required="" value="US"/>
-                        </div>
-
-                    </form>
-                </div>
-
-                <div class="slide-box">
-                    <div>
-                        <h2>
-                            Welcome to, Lilylane Store.
-                        </h2>
-                        <p class="slide-box-p1">
-                            You bring the love. We’ll bring the flowers.
-                        </p>
-                        <p class="slide-box-p2">
-                            If you don't have acount before, please touch button below
-                        </p>
-
-                    </div>
-                    <button id="change" onclick="change()">
-                        Create new Account
+<body onload="getCookiedata()">
+    <div class="container-fluid header_main">
+        <div class="container-fluid navbar-content">
+            <nav class="navbar navbar-expand-lg">
+                <div class="logo col-md-3">
+                    <a class="navbar-brand" href="#"><img src="./assets/img/logo/lily-lane-logo-web.png" alt
+                            width="100px"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
                     </button>
                 </div>
-            </div>
-
-        </div>
-
-        <div class="pop-up" id="popup">
-            <a href="#" onclick="hide()" id="close"><i class="fa fa-close" style="font-size:32px"></i></a>
-            <h2>Forgot Password</h2>
-
-            <p style="text-align: start;">Email</p>
-            <input type="" placeholder="Username" required="" id="username" style="border: 2px solid black; width: 81%;">
-            <span class="user"
-                  style="background-color: yellow; border: 2px solid black; padding: 6px 15px; border-radius: 5px;">
-                <i class="fa fa-paper-plane" aria-hidden="true"></i>
-            </span>
-
-            <p>Mã xác nhận (được gửi về Email)</p>
-            <input type="" placeholder="Username" required="" id="username" style="border: 2px solid black;">
-            <p style="margin-top: 0; margin-bottom: 10px;">Bạn vẫn chưa nhận được mã? <span
-                    style="color:rgb(255,139,139);">Gửi lại</span></p>
-
-            <input type="submit" value="SEND">
-        </div>
-
-        <div class="container-fluid">
-            <div>
-                <div class="row footer">
-                    <div class="col-md-3" style="margin: auto;">
-                        <div style="text-align: center;">
-                            <img src="./assets/img/logo/353377363_270213872326179_7859750982400627396_n.png" alt=""
-                                style="width: 120%;">
-                        </div>
-                    </div>
-    
-                    <div class="col-md-4">
-                        <h2>ABOUT OUR SHOP</h2>
-                        <ul>
-                            <li><i class="fa-solid fa-map-location-dot"></i> 289 Tran Hung Dao, District 1, Ho Chi Minh City
-                            </li>
-                            <li><i class="fa-solid fa-paper-plane"></i> lilylanestore.flower@gmail.com</li>
-                            <li><i class="fa-solid fa-phone"></i> 0989 899 998</li>
-                        </ul>
-                        <div class="icon">
-                            <a href="#"><i class="fa-brands fa-square-facebook  fa-2x" style="color: #807171;"></i></a>
-                            <a href="#"><i class="fa-brands fa-square-youtube  fa-2x" style="color: #807171;"></i></a>
-                            <a href="#"><i class="fa-brands fa-square-twitter  fa-2x" style="color: #807171;"></i></a>
-                            <a href="#"><i class="fa-brands fa-square-instagram  fa-2x" style="color: #807171;"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-md-2">
-                        <h2>CUSTOMER SERVICE</h2>
-                        <ul>
-                            <li>Shipping Policy</li>
-                            <li>Help & Contact Us</li>
-                            <li>Terms and Conditions</li>
-                        </ul>
-                    </div>
-                    <div class="col-md-3">
-                        <h2>INFORMATION</h2>
-                        <ul>
-                            <li>About Us</li>
-                            <li>Delivery Information</li>
-                            <li>Privacy Page</li>
-                        </ul>
+                <div class="service col-md-6 collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class=" nav-item ">
+                            <a class="nav-link active" href="#">Home</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Flower Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Service</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="right-nav nav-item col-md-3">
+                    <ul class="col-md-5 cart navbar-nav mr-auto">
+                        <li class="nav-item" style="padding: 0;">
+                            <a class="nav-link" href="#" style="font-size: 20px;"><i
+                                    class="fa-solid fa-cart-shopping"></i></a>
+                        </li>
+                    </ul>
+                    <div class="col-md-7 account">
+                        <a href="#"><i class="fa-solid fa-user"></i> Đăng nhập</a>
                     </div>
                 </div>
-                <div class="row footer_bottom">
-                    <span>Copyright &copy; 2023 All rights reserved | <span style="font-weight: bold;">Lily
-                            Lane</span></span>
+            </nav>
+        </div>
+    </div>
+    <!-- end: header  -->
+    <!-- Header & navbar  -->
+    <div class="background-img"></div>
+    <div class="outline">
+        <div class="background-url" id="container">
+            <div class="form-container  login-container" id="login">
+                <form action="MainController" style="top: 60px;" method="POST">
+                    <div class="header">
+                        <div>SIGN IN</div>
+                    </div>
+                    <div class="login-type">
+                        <div class="inputBox">
+                            <input type="text" name="userID" required="" id="username" />
+                            <span>UserName</span>
+                        </div>
+                        <div class="inputBox">
+                            <div class="password-input">
+                                <input type="password" name="password" required="" id="password-text" />
+                                <span>Password</span>
+                            </div>
+                            <!-- <span class="eye">
+                                    <i id="showPassword" class="fa-solid fa-eye"></i>
+                                </span> -->
+                        </div>
+
+                    </div>
+                    <li class="login-function">
+                        <span><input type="checkbox" onclick="saveInfo()">Remember Me</span>
+                        <a href="#" id="forgot-pass" onclick="forgot_pass()">Forgot Password?</a>
+                        <p class="mess-error"><span>${requestScope.ERROR}</span></p>
+                    </li>
+
+                    <div class="login-success">
+                        <input type="submit" name="action" value="Login" />
+                    </div>
+                    <div class="other-login-icon">
+                        <div class="or-login">
+                            <div class="line"></div>
+                            <span>OR</span>
+                            <div class="line"></div>
+                        </div>
+                        <ul class="other-signin">
+                            <a href="#">
+                                <li><i class="fab fa-google"></i>Continue with Google</li>
+                            </a>
+                        </ul>
+                    </div>
+
+                </form>
+            </div>
+            <div class="form-container register-container" id="register">
+                <div class="header">
+                    <div>SIGN UP</div>
                 </div>
+                <form action="MainController" id="register">
+                    <div class="login-type">
+                        <div class="inputBox-signup">
+                            <div class="inputBox">
+                                <input type="text" name="userID" required="" />
+                                <span>UserName</span>
+                            </div>
+                            <p class="mess-error">${requestScope.USER_ERROR.userIDError}</p>
+
+                        </div>
+
+                        <div class="inputBox-signup">
+                            <div class="inputBox">
+                                <input type="text" name="fullName" required="" />
+                                <span>FullName</span>
+                            </div>
+                            <p class="mess-error">${requestScope.USER_ERROR.fullNameError}</p>
+
+
+                        </div>
+
+                        <div class="inputBox-signup">
+                            <div class="inputBox">
+                                <input type="email" name="email" required="" />
+                                <span>Email</span>
+                            </div>
+                            <p class="mess-error">${requestScope.USER_ERROR.EmailError}</p>
+
+                        </div>
+
+                        <div class="inputBox-signup">
+                            <div class="inputBox">
+                                <div class="password-input">
+                                    <input type="password" name="password" required="" />
+                                    <span>Password</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="inputBox-signup">
+                            <div class="inputBox">
+                                <div class="password-input">
+                                    <input type="password" name="confirm" required="" />
+                                    <span>Rewrite Password</span>
+                                </div>
+                            </div>
+                            <p class="mess-error">${requestScope.USER_ERROR.ConfirmError}</p>
+
+                        </div>
+                        <div class="inputBox-signup">
+                            <div class="capcha">
+                                <div class="g-recaptcha" data-sitekey="6LfFfrAmAAAAAAoVKML2RbJgTbneNmLVmpWs0HU1"
+                                    data-callback='onSubmit' data-action='submit' required=""></div>
+                                <p class="mess-error" style="margin: 0;">ReCheck Capcha</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="login-success">
+                        <input type="submit" name="action" value="Sign Up" />
+                        <input type="hidden" name="roleID" required="" value="US" />
+                    </div>
+
+                </form>
+            </div>
+
+            <div class="slide-box">
+                <div>
+                    <h2>
+                        Welcome to, Lilylane Store.
+                    </h2>
+                    <p class="slide-box-p1">
+                        You bring the love. We’ll bring the flowers.
+                    </p>
+                    <p class="slide-box-p2">
+                        If you don't have acount before, please touch button below
+                    </p>
+
+                </div>
+                <button id="change" onclick="change()">
+                    Create new Account
+                </button>
             </div>
         </div>
 
+    </div>
 
-        <script src="assets/js/bootstrap/jquery.min.js"></script>
-        <script src="assets/js/bootstrap/popper.min.js"></script>
-        <script src="assets/js/bootstrap/bootstrap.min.js"></script>
-        <script src="https://www.google.com/recaptcha/api.js"></script>
-        <script src="./assets/js/login.js"></script>
-        <script src="./assets/js/saveInfo.js"></script>
-        <script>
-            function change() {
-                var changebtn = document.getElementById("change");
-                var slidebox = document.querySelector(".slide-box");
-                var slideboxp1 = document.querySelector(".slide-box-p1");
-                var slideboxp2 = document.querySelector(".slide-box-p2");
-                let data = changebtn.innerHTML;
-                if (slidebox.classList.contains("right")) {
-                    slideboxp1.innerHTML = "You bring the love. We’ll bring the flowers.";
-                    slideboxp2.innerHTML = "If you don't have acount before, please touch button below";
-                    changebtn.innerHTML = "Create new Account";
-                    slidebox.classList.remove("right");
-                } else {
-                    slideboxp1.innerHTML = "Let us help you with all your flower needs.";
-                    slideboxp2.innerHTML = "If you already have an account, click blow button to login";
-                    changebtn.innerHTML = "Go to Login";
-                    slidebox.classList.add("right");
-                }
+    <div class="pop-up" id="popup">
+        <a href="#" onclick="hide()" id="close"><i class="fa fa-close" style="font-size:32px"></i></a>
+        <h2>Forgot Password</h2>
 
+        <p style="text-align: start;">Email</p>
+        <input type="" placeholder="Username" required="" id="username" style="border: 2px solid black; width: 81%;">
+        <span class="user"
+            style="background-color: yellow; border: 2px solid black; padding: 6px 15px; border-radius: 5px;">
+            <i class="fa fa-paper-plane" aria-hidden="true"></i>
+        </span>
+
+        <p>Mã xác nhận (được gửi về Email)</p>
+        <input type="" placeholder="Username" required="" id="username" style="border: 2px solid black;">
+        <p style="margin-top: 0; margin-bottom: 10px;">Bạn vẫn chưa nhận được mã? <span
+                style="color:rgb(255,139,139);">Gửi lại</span></p>
+
+        <input type="submit" value="SEND">
+    </div>
+
+    <div class="container-fluid">
+        <div>
+            <div class="row footer">
+                <div class="col-md-3" style="margin: auto;">
+                    <div style="text-align: center;">
+                        <img src="./assets/img/logo/353377363_270213872326179_7859750982400627396_n.png" alt=""
+                            style="width: 120%;">
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <h2>ABOUT OUR SHOP</h2>
+                    <ul>
+                        <li><i class="fa-solid fa-map-location-dot"></i> 289 Tran Hung Dao, District 1, Ho Chi Minh City
+                        </li>
+                        <li><i class="fa-solid fa-paper-plane"></i> lilylanestore.flower@gmail.com</li>
+                        <li><i class="fa-solid fa-phone"></i> 0989 899 998</li>
+                    </ul>
+                    <div class="icon">
+                        <a href="#"><i class="fa-brands fa-square-facebook  fa-2x" style="color: #807171;"></i></a>
+                        <a href="#"><i class="fa-brands fa-square-youtube  fa-2x" style="color: #807171;"></i></a>
+                        <a href="#"><i class="fa-brands fa-square-twitter  fa-2x" style="color: #807171;"></i></a>
+                        <a href="#"><i class="fa-brands fa-square-instagram  fa-2x" style="color: #807171;"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <h2>CUSTOMER SERVICE</h2>
+                    <ul>
+                        <li>Shipping Policy</li>
+                        <li>Help & Contact Us</li>
+                        <li>Terms and Conditions</li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h2>INFORMATION</h2>
+                    <ul>
+                        <li>About Us</li>
+                        <li>Delivery Information</li>
+                        <li>Privacy Page</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row footer_bottom">
+                <span>Copyright &copy; 2023 All rights reserved | <span style="font-weight: bold;">Lily
+                        Lane</span></span>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="assets/js/bootstrap/jquery.min.js"></script>
+    <script src="assets/js/bootstrap/popper.min.js"></script>
+    <script src="assets/js/bootstrap/bootstrap.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script src="./assets/js/login.js"></script>
+    <script src="./assets/js/saveInfo.js"></script>
+    <script>
+        function change() {
+            var changebtn = document.getElementById("change");
+            var slidebox = document.querySelector(".slide-box");
+            var slideboxp1 = document.querySelector(".slide-box-p1");
+            var slideboxp2 = document.querySelector(".slide-box-p2");
+            let data = changebtn.innerHTML;
+            if (slidebox.classList.contains("right")) {
+                slideboxp1.innerHTML = "You bring the love. We’ll bring the flowers.";
+                slideboxp2.innerHTML = "If you don't have acount before, please touch button below";
+                changebtn.innerHTML = "Create new Account";
+                slidebox.classList.remove("right");
+            } else {
+                slideboxp1.innerHTML = "Let us help you with all your flower needs.";
+                slideboxp2.innerHTML = "If you already have an account, click blow button to login";
+                changebtn.innerHTML = "Go to Login";
+                slidebox.classList.add("right");
             }
-            fill();
 
-            function fill() {
+        }
+        fill();
 
-                if ($('.slide-box').hasClass('right')) {
-                    $('.slide-box-p1').html("Let us help you with all your flower needs.");
+        function fill() {
 
-                    $('.slide-box-p2').html("If you already have an account, click blow button to login");
-                    $('#change').html('Go to Login');
-                } else {
-                    $('.slide-box .slide-box-p1').text("You bring the love. We’ll bring the flowers.");
-                    $('.slide-box-p2').html("If you don't have acount before, please touch button below");
-                    $('#change').html('Create new Account');
-                }
+            if ($('.slide-box').hasClass('right')) {
+                $('.slide-box-p1').html("Let us help you with all your flower needs.");
 
+                $('.slide-box-p2').html("If you already have an account, click blow button to login");
+                $('#change').html('Go to Login');
+            } else {
+                $('.slide-box .slide-box-p1').text("You bring the love. We’ll bring the flowers.");
+                $('.slide-box-p2').html("If you don't have acount before, please touch button below");
+                $('#change').html('Create new Account');
             }
 
-//             function fill() {
+        }
 
-// if ($('.slide-box').hasClass('right')) {
-//     $('.slide-box-p1').html("Login and have a great booking experience");
-
-//     $('.slide-box-p2').html("If you don't have acount before, please touch button below");
-//     $('#change').html('Create new Account');
-// } else {
-//     $('.slide-box .slide-box-p1').text("Fill in the information so that we can contact you");
-//     $('.slide-box-p2').html("If you already have an account, click blow button to login");
-//     $('#change').html('Go to login');
-// }
-
-// }
-            
-        </script>
-    </body>
+    </script>
+</body>
 
 
 </html>

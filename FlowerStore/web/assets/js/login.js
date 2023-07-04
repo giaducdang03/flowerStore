@@ -19,23 +19,49 @@
         var text2 = document.getElementById('dangnhap');
         var text3 = document.getElementById('login');
         var text4 = document.getElementById('register');
+        
         if (text1.style.display === "none") {
             text1.style.display = 'flex';
             text4.style.zIndex = '0';
             text2.style.display = 'none';
-            text3.style.display = 'block';              
-     } else {
+            text3.style.display = 'block';
+            localStorage.setItem('login_regis_state', 'signup');
+        } else {
+            text1.style.display = 'none';
+            text3.style.display = 'none';
+            text4.style.zIndex = '1';
+            text2.style.display = 'flex';
+            localStorage.setItem('login_regis_state', 'signin');
+        }
+    }
+    
+    // Khôi phục trạng thái của login_regis()
+    document.addEventListener("DOMContentLoaded", function() {
+        var loginRegisState = localStorage.getItem('login_regis_state');
+        if (loginRegisState === 'signup') {
+            var text1 = document.getElementById('dangky');
+            var text2 = document.getElementById('dangnhap');
+            var text3 = document.getElementById('login');
+            var text4 = document.getElementById('register');
+            text1.style.display = 'flex';
+            text4.style.zIndex = '0';
+            text2.style.display = 'none';
+            text3.style.display = 'block';
+        } else if (loginRegisState === 'signin') {
+            var text1 = document.getElementById('dangky');
+            var text2 = document.getElementById('dangnhap');
+            var text3 = document.getElementById('login');
+            var text4 = document.getElementById('register');
             text1.style.display = 'none';
             text3.style.display = 'none';
             text4.style.zIndex = '1';
             text2.style.display = 'flex';
         }
-    }
+    });
 
     function forgot_pass() {
         var forgot = document.getElementById('forgot-pass');
         var show = document.getElementById('popup');
-
         if (forgot) {
             show.style.display = 'block';
         }
