@@ -5,10 +5,6 @@
 
 }
 
-body {
-    background-color: #f4f4f4;
-}
-
 .banner {
     height: 400px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url(../img/checkout/banner.webp);
@@ -70,18 +66,13 @@ body {
 .table-cart {
     width: 68%;
     float: left;
-    margin-bottom: 50px;
+    /* padding: 10px; */
     background-color: white;
 }
 
 .table-cart input {
     width: 60%;
     border: none;
-}
-
-.table-cart .in4 input {
-    border: 1px solid #ccc;
-    padding: 8px;
 }
 
 .table-cart thead th {
@@ -124,12 +115,6 @@ td {
 .table-cart .quantity input {
     text-align: center;
     width: 60px;
-}
-
-.back-to-cart {
-    clear: left;
-    position: relative;
-    bottom: 45px;
 }
 
 .table-cart .back-to-cart td {
@@ -378,7 +363,10 @@ td {
     color: #FF6B6B;
 }
 
-.footer {
-    clear: left;
+/* checkout error */
+.mess-error {
+    font-size: 15px;
+    color: red;
+    font-weight: 500;
 }
 
