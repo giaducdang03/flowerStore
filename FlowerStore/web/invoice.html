@@ -10,64 +10,65 @@
             margin: 0;
             padding: 0;
         }
-
         .container {
             width: 600px;
             margin: 0 auto;
             padding: 20px;
             background-color: #f7f7f7;
         }
-
         .header img {
             display: block;
             margin: 0 auto;
         }
-
         .title {
             text-align: center;
             margin-top: 20px;
         }
-
         .title h2 {
             margin-bottom: 5px;
             color: #FF6B6B;
         }
-
         .title p {
             margin-top: 6px;
             color: #757575;
         }
-
         .line {
             border-top: 1px solid #ddd;
             margin-top: 20px;
         }
-
         .content {
             margin-top: 20px;
         }
-
         .content h4 span {
             color: #FF6B6B;
         }
-
         .content p strong {
             color: #747474;
         }
-
+        .content table th {
+            padding: 10px;
+        }
         table {
             width: 100%;
             margin-top: 20px;
         }
-
         th {
             font-weight: bold;
             text-align: left;
         }
-
         .price {
             color: #10b981;
             font-size: 18px;
+            font-weight: bold;
+        }
+        .footer {
+            background-color: #ffe2e2;
+            text-align: center;
+        }
+        .footer p {
+            margin: 5px;
+        }
+        .footer p:first-child {
             font-weight: bold;
         }
     </style>
@@ -84,14 +85,30 @@
         <div class="line"></div>
         <div class="content">
             <h4>Invoice <span>#94389</span></h4>
-            <p><strong>Customer:</strong></p>
-            <p>Dang Gia Duc</p>
-            <p><strong>Email:</strong></p>
-            <p>giaducdang@gmail.com</p>
-            <p><strong>Payment method:</strong></p>
-            <p>VNPAY</p>
-            <p><strong>Date of payment:</strong></p>
-            <p>2023-06-30</p>
+            <table>
+                <tbody>
+                    <tr>
+                        <th>Customer:</th>
+                        <td>Dang Gia Duc</td>
+                    </tr>
+                    <tr>
+                        <th>Address:</th>
+                        <td>15 Duong so 6, Phuong Hiep Phu, TP. Thu Duc, TP. HCM</td>
+                    </tr>
+                    <tr>
+                        <th>Email:</th>
+                        <td>giaducdang@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <th>Payment method:</th>
+                        <td>VNPAY</td>
+                    </tr>
+                    <tr>
+                        <th>Date of payment:</th>
+                        <td>2023-06-30</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
         <div class="line"></div>
         <table>
@@ -100,6 +117,11 @@
                 <td class="price">400,000 VND</td>
             </tr>
         </table>
+    </div>
+    <div class="container footer">
+        <p>Lily Lane Store</p>
+        <p>lilylanestore.flower@gmail.com</p>
+        <p>289 Tran Hung Dao, District 1, Ho Chi Minh City</p>
     </div>
 </body>
 </html>
