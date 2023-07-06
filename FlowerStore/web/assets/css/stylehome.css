@@ -609,6 +609,12 @@ p {
     padding: 20px 0;
 }
 
+.test {
+    display: flex;
+    flex-direction: column;
+    
+}
+
 .footer .icon {
     display: flex;
     justify-content: space-evenly;
