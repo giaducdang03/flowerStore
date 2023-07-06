@@ -72,8 +72,7 @@
 
 .table-cart input {
     width: 60%;
-    padding: 8px;
-    border: 1px solid #ccc;
+    border: none;
 }
 
 .table-cart thead th {
@@ -362,5 +361,12 @@ td {
 .noti-checkout a {
     font-size: 18px;
     color: #FF6B6B;
+}
+
+/* checkout error */
+.mess-error {
+    font-size: 15px;
+    color: red;
+    font-weight: 500;
 }
 
