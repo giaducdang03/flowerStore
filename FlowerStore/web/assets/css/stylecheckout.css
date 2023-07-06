@@ -72,8 +72,12 @@
 
 .table-cart input {
     width: 60%;
-    padding: 8px;
+    border: none;
+}
+
+.table-cart .in4 input {
     border: 1px solid #ccc;
+    padding: 8px;
 }
 
 .table-cart thead th {
