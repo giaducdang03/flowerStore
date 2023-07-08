@@ -5,6 +5,10 @@
 
 }
 
+.content {
+    min-height: 100vh;
+}
+
 .banner {
     height: 400px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url(../img/checkout/banner.webp);
@@ -49,14 +53,39 @@
     color: #ff6b6b;
 }
 
+.website {
+    line-height: 32px;
+}
+
 .web-project {
     margin-top: 50px;
 }
 
-.img-mockup img {
+.website img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    animation-name: spin;
+    animation-duration: 50000ms;
+
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+/* .img-mockup img {
     border-radius: 50%;
     width: 100%;
-}
+} */
 
 .design {
     display: flex;
@@ -71,4 +100,13 @@
 .technology {
     display: flex;
     align-items: center;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+}
+
+.footer {
+    margin-top: 53px;
 }
