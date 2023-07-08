@@ -61,9 +61,15 @@
     margin-top: 50px;
 }
 
+.website {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
 .website img {
-    width: 250px;
-    height: 250px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     /* animation-name: spin; */
     /* animation-duration: 50000ms; */
