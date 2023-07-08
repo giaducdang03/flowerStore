@@ -1,6 +1,5 @@
 * {
     box-sizing: border-box;
-    /* font-family: 'Signika Negative', 'sans-serif'; */
     font-family: 'Josefin Sans', sans-serif;
 
 }
@@ -65,8 +64,8 @@
     width: 250px;
     height: 250px;
     border-radius: 50%;
-    animation-name: spin;
-    animation-duration: 50000ms;
+    /* animation-name: spin; */
+    /* animation-duration: 50000ms; */
 
 }
 
@@ -103,8 +102,13 @@
 }
 
 .main {
+    margin-top: 30px;
     display: flex;
     align-items: center;
+}
+
+.main ul {
+    padding-left: 20px;
 }
 
 .footer {
