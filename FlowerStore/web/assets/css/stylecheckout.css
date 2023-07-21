@@ -126,11 +126,6 @@ td {
     width: 60px;
 }
 
-.back-to-cart {
-    clear: left;
-    position: relative;
-    bottom: 45px;
-}
 
 .table-cart .back-to-cart td {
     text-align: left;
@@ -379,6 +374,14 @@ td {
 }
 
 .footer {
+    margin-top: 50px;
     clear: left;
+}
+
+.back-to-cart {
+    clear: left;
+    clear: right;
+    position: absolute;
+    bottom: -109px;
 }
 
