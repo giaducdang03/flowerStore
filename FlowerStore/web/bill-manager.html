@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page | Lily Lane</title>
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400&display=swap"
+        rel="stylesheet">
+    <!-- boostrap -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/font/css/all.css">
+    <link rel="stylesheet" href="./assets/css/bill-manager.css">
+
+</head>
+
+<body>
+    <div class="container-fluid header_main">
+        <div class="container-fluid navbar-content">
+            <nav class="navbar navbar-expand-lg">
+                <div class="logo col-md-2">
+                    <a class="navbar-brand" href="#"><img
+                            src="./assets/img/logo/lily-lane-logo-web.png" alt width="100px"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="service col-md-7 collapse navbar-collapse" id="navbarSupportedContent">
+                    <a class="nav-link active" href="#">Admin Page</a>
+
+
+                </div>
+                <div class="right-nav col-md-2">
+                    <div class="account">
+                        <div class="logo-admin">
+                            <img src="./assets/img/admin/avt-admin.png" alt="" width="60px">
+                        </div>
+                        <div class="admin-text">
+                            <p>ADMIN</p>
+                            <p>Duongbao2k3</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bell col-md-1">
+                    <a href="#"><i class="fa-solid fa-bell"></i></a>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <div class="body-main">
+        <div class="row" style="margin: 0px;">
+            <div class="left-bar col-md-2">
+                <div class="service">
+                    <ul class="list-service">
+                        <a href="#">
+                            <li><i class="fa-solid fa-chart-line"></i> Dashboard</li>
+                        </a>
+                        <a href="#">
+                            <li><i class="fa-regular fa-user"></i> User </li>
+                        </a>
+                        <a href="#">
+                            <li><i class="fa-solid fa-bars-progress"></i> Product</li>
+                        </a>
+                        <a href="#">
+                            <li><i class="fa-solid fa-file-invoice"></i> Order </li>
+                        </a>
+                        <a href="#">
+                            <li><i class="fa-solid fa-right-from-bracket"></i> Logout</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="right-bar col-md-10" style="  background-color: #f2f6fa;">
+                <div class="info">
+                <p>OVERVIEW</p>
+                <div class="overview-container">
+                    <div class="overview">
+                        <div>
+                            <p>Total order</p>
+                            <h3>1000</h3>
+                        </div>
+                        <div class="icon">
+                            <i class="fa-solid fa-shopping-bag"></i>
+                        </div>
+                    </div>
+                    <div class="overview">
+                        <div>
+                            <p>Order completed</p>
+                            <h3>1000</h3>
+                        </div>
+                        <div class="icon">
+                            <i class="fa-solid fa-shopping-bag"></i>
+                        </div>
+                    </div>
+                    <div class="overview">
+                        <div>
+                            <p>Order pending</p>
+                            <h3>1000</h3>
+                        </div>
+                        <div class="icon">
+                            <i class="fa-solid fa-shopping-bag"></i>
+                        </div>
+                    </div>
+                    <div class="overview">
+                        <div>
+                            <p>Order cancelled</p>
+                            <h3>1000</h3>
+                        </div>
+                        <div class="icon">
+                            <i class="fa-solid fa-shopping-bag"></i>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+                <form action="">
+                    <div class=" order-list">
+                        <p>Order List</p>
+                        <div>
+                            <input type="text" placeholder="Search by userID"/>
+                            <input type="submit" name="" id="" value="Search">
+
+                        </div>
+                    </div>
+
+                </form>
+
+                <div class="list-order">
+                    <table class="table">
+                        <tr>
+                            <td>Order Code</td>
+                            <td>User ID</td>
+                            <td>Order Date</td>
+                            <td>Total</td>
+                            <td>Payment Method</td>
+                            <td>Payment Date</td>
+                            <td>Status</td>
+                            <td>is Success</td>
+                            <td style="text-align: center;">Change</td>
+                        </tr>
+                        <form action="" method="POST">
+                            <tr style="background-color: white; border: none;">
+                                <td>873538</td>
+                                <td class="userID">duongbao2k3</td>
+                                <td>
+                                    2023-07-20
+                                </td>
+                                <td>
+                                    350.000 &#8363;
+                                </td>
+                                <td>VNPAY</td>
+                                <td>2023-07-20</td>
+                                <td class="status status-completed">
+                                    <p>COMPLETED</p>
+                                </td>
+                                <td>
+                                    <input type="checkbox" name="">
+                                </td>
+                                <td class="action">
+                                    <div class="update">
+                                        <input type="hidden" value="Update">
+                                        <button><i class="fa-solid fa-pen-to-square"></i></button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </form>
+                        <form action="" method="POST">
+                            <tr style="background-color: white; border: none;">
+                                <td>873538</td>
+                                <td class="userID">duongbao2k3</td>
+                                <td>
+                                    2023-07-20
+                                </td>
+                                <td>
+                                    350.000 &#8363;
+                                </td>
+                                <td>VNPAY</td>
+                                <td>2023-07-20</td>
+                                <td class="status status-cancelled">
+                                    <p>CANCELLED</p>
+                                </td>
+                                <td>
+                                    <input type="checkbox" name="">
+                                </td>
+                                <td class="action">
+                                    <div class="update">
+                                        <input type="hidden" value="Update">
+                                        <button><i class="fa-solid fa-pen-to-square"></i></button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </form>
+                    </table>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="./assets/js/bootstrap/jquery.min.js"></script>
+    <script src="./assets/js/bootstrap/popper.min.js"></script>
+    <script src="./assets/js/bootstrap/bootstrap.min.js"></script>
+</body>
+
+</html>
