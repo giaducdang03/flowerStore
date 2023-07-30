@@ -22,8 +22,8 @@
         <div class="container-fluid navbar-content">
             <nav class="navbar navbar-expand-lg">
                 <div class="logo col-md-2">
-                    <a class="navbar-brand" href="#"><img
-                            src="./assets/img/logo/lily-lane-logo-web.png" alt width="100px"></a>
+                    <a class="navbar-brand" href="#"><img src="./assets/img/logo/lily-lane-logo-web.png" alt
+                            width="100px"></a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -87,7 +87,7 @@
                     <div class=" user-list">
                         <p>User List</p>
                         <div>
-                            <input type="text" placeholder="Search user"/>
+                            <input type="text" placeholder="Search user" />
                             <input type="submit" name="" id="" value="Search">
 
                         </div>
@@ -111,7 +111,7 @@
                                 <td>1</td>
                                 <td class="userID">duongbao2k3</td>
                                 <td class="name">
-                                    <input type="text" name="fullName" value="Duong Ton Bao (K17 HCM)"/>
+                                    <input type="text" name="fullName" value="Duong Ton Bao (K17 HCM)" />
                                 </td>
                                 <td class="role">
                                     <!-- <select name="" id="">
@@ -129,7 +129,7 @@
                                     </div>
                                     <div class="delete">
                                         <input type="hidden" value="Delete">
-                                        <button><i class="fa-solid fa-trash-can"></i></button>
+                                        <button type="button" data-toggle="modal" data-target="#deleteAction"><i class="fa-solid fa-trash-can"></i></button>
                                     </div>
                                 </td>
                             </tr>
@@ -138,7 +138,7 @@
                                 <td>1</td>
                                 <td class="userID">ducdeptry</td>
                                 <td class="name">
-                                    <input type="text" name="fullName" value="Dang Phan Gia Duc (K17 HCM)"/>
+                                    <input type="text" name="fullName" value="Dang Phan Gia Duc (K17 HCM)" />
                                 </td>
                                 <td class="role">
                                     <!-- <select name="" id="">
@@ -168,6 +168,28 @@
 
 
 
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="deleteAction" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
             </div>
         </div>
     </div>
