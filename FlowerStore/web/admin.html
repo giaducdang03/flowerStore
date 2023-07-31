@@ -81,7 +81,8 @@
                 <form action="">
                     <div class="control-add-user">
                         <div class="add-user">
-                            <input type="submit" name="" value="+ Add User">
+                            <!-- <input type="submit" name="" value="+ Add User"> -->
+                            <button type="button" data-toggle="modal" data-target="#addUserModal">+ Add User</button>
                         </div>
                     </div>
                     <div class=" user-list">
@@ -129,7 +130,8 @@
                                     </div>
                                     <div class="delete">
                                         <input type="hidden" value="Delete">
-                                        <button type="button" data-toggle="modal" data-target="#deleteAction"><i class="fa-solid fa-trash-can"></i></button>
+                                        <button type="button" data-toggle="modal" data-target="#deleteAction"><i
+                                                class="fa-solid fa-trash-can"></i></button>
                                     </div>
                                 </td>
                             </tr>
@@ -172,23 +174,94 @@
         </div>
     </div>
 
-    <!-- Modal -->
-    <div class="modal fade" id="deleteAction" tabindex="-1" role="dialog"
+    <!-- Modal delete action-->
+    <div class="modal fade modalDelete" id="deleteAction" tabindex="-1" role="dialog"
         aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
+                        <span aria-hidden="true"><i class="fa-solid fa-times"></i></span>
+                    </button>
+                </div>
+                <div class="text-center">
+                    <img src="./assets/img/admin/canclled-icon_2.png" alt="" width="100px">
+                </div>
+                <div class="modal-body">
+                    <h3 style="text-align: center;">Are you sure?</h3>
+                    <p>
+                        Do you really want to delete this User? This process cannot be undone.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <div>
+                        <button type="button" class="button btn-close" data-dismiss="modal">Close</button>
+                        <button type="button" class="button btn-del">Delete</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal add user -->
+    <div class="modal fade modalAdd" id="addUserModal" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Add user</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fa-solid fa-times"></i></span>
                     </button>
                 </div>
                 <div class="modal-body">
-                    ...
+                    <form>
+                        <div class="row">
+                            <div class="col-md-6 form-group">
+                                <label for="inputUserID">User ID</label>
+                                <input type="text" class="form-control" id="inputUserID" placeholder="Enter user ID" required>
+                                <p class="mess-error">User is already exist</p>
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <label for="inputUserAvt">Link avatar</label>
+                                <input type="text" class="form-control" id="inputUserAvt" placeholder="Link avatar">
+                                <p class="mess-error"></p>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="inputFullName">Full name</label>
+                            <input type="text" class="form-control" id="inputFullName" placeholder="Enter full name" required>
+                            <p class="mess-error"></p>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputPassword">Password</label>
+                            <input type="text" class="form-control" id="inputPassword" value="123456" readonly>
+                            <p class="mess-error"></p>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputRoleID">Role ID</label>
+                            <select class="form-control" id="inputRoleID">
+                              <option>Admin</option>
+                              <option>User</option>
+                            </select>
+                          </div>
+                        <div class="form-group">
+                            <label for="inputEmail">Email</label>
+                            <input type="email" class="form-control" id="inputEmail" placeholder="example: abc@gmail.com">
+                            <p class="mess-error"></p>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputAddress">Address</label>
+                            <input type="text" class="form-control" id="inputAddress" placeholder="Enter address">
+                            <p class="mess-error"></p>
+                        </div>
+                    </form>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <button type="button" class="button btn-close" data-dismiss="modal">Close</button>
+                    <button type="button" class="button btn-add">Add</button>
                 </div>
             </div>
         </div>

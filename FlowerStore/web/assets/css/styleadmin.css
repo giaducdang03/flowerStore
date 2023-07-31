@@ -131,12 +131,13 @@ body {
 }
 
 
-.body-main .right-bar .add-user input {
+.body-main .right-bar .add-user button {
     padding: 4px 40px;
     background-color: #ff6b6b;
     border: none;
     color: white;
     font-weight: 900;
+    outline: none;
 }
 
 .body-main .right-bar .user-list {
@@ -280,6 +281,116 @@ tr:first-child {
 .action .delete:active {
     transform: scale(0.93);
 }
+
+/* action-modal */
+.modal button {
+    outline: none;
+}
+
+.modal .modal-content {
+    
+}
+
+.modal .modal-header {
+    border-bottom: none;
+    padding-bottom: 0px;
+}
+
+.modal .modal-body {
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+
+.modal .modal-body p {
+    margin: 0 30px;
+    color: #757575;
+    text-align: center;
+}
+
+.modal .modal-footer {
+    border-top: none;
+    justify-content: center;
+}
+
+.modal .modal-footer .button {
+    color: #fff;
+    width: 100px;
+    border: none;
+    padding: 8px 5px;
+    background-color: #898a8a;
+    border-radius: 5px;
+}
+
+.modal .modal-footer .btn-del {
+    background-color: #ff6b6b;
+}
+
+.modal .modal-footer .btn-del:hover {
+    background-color: #ff8383;
+}
+
+.modal .modal-footer .btn-close:hover {
+    background-color: #999999;
+}
+
+/* add user modal */
+.modalAdd .modal-content {
+    
+}
+
+.modalAdd .modal-header {
+    border-bottom: none;
+    padding-bottom: 0px;
+}
+
+.modalAdd .modal-body {
+    padding-bottom: 16px;
+    padding-top: 16px;
+}
+
+.modalAdd .modal-body p {
+    margin: 0 30px;
+    color: #757575;
+    text-align: center;
+}
+
+.modalAdd .modal-body p.mess-error {
+    text-align: left;
+    margin-left: 0;
+    color: red;
+    font-size: 14px;
+    height: 15px;
+}
+
+.modalAdd .modal-footer {
+    border-top: none;
+    justify-content: flex-end;
+}
+
+
+
+.modalAdd .modal-footer .button {
+    color: #fff;
+    width: 120px;
+    border: none;
+    padding: 8px 5px;
+    background-color: #898a8a;
+    border-radius: 5px;
+}
+
+.modalAdd .modal-footer .btn-add {
+    background-color: #ff6b6b;
+}
+
+.modalAdd .modal-footer .btn-add:hover {
+    background-color: #ff8383;
+}
+
+.modalAdd .modal-footer .btn-close:hover {
+    background-color: #999999;
+}
+
+
 
 
 
