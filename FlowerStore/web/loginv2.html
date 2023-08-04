@@ -18,6 +18,7 @@
     <!-- <link rel="icon" type="image/x-icon" href="./assets/logo/icon-web.png">
         <link rel="stylesheet" href="./assets/css/bootstrap.min/bootstrap.min.css">
         <link rel="stylesheet" href="./assets/css/font/css/all.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./assets/css/stylehome.css">
     <link rel="stylesheet" href="./assets/css/styleloginv2.css">
 </head>
@@ -96,7 +97,7 @@
                     </div>
                     <li class="login-function">
                         <span><input type="checkbox" onclick="saveInfo()">Remember Me</span>
-                        <a href="#" id="forgot-pass" onclick="forgot_pass()">Forgot Password?</a>
+                        <a href="#" type="button" data-toggle="modal" data-target="#deleteAction">Forgot Password?</a>
                         <p class="mess-error"><span>${requestScope.ERROR}</span></p>
                     </li>
 
@@ -145,7 +146,7 @@
 
                         <div class="inputBox-signup">
                             <div class="inputBoxx">
-                                <input type="text" name="email" required="" readonly="" value="US"/>
+                                <input type="text" name="email" required="" readonly="" value="US" />
                                 <span>Role ID</span>
                             </div>
                             <p class="mess-error">${requestScope.USER_ERROR.EmailError}</p>
@@ -206,27 +207,38 @@
                 </button>
             </div>
         </div>
-
     </div>
 
-    <div class="pop-up" id="popup">
-        <a href="#" onclick="hide()" id="close"><i class="fa fa-close" style="font-size:32px"></i></a>
-        <h2>Forgot Password</h2>
-
-        <p style="text-align: start;">Email</p>
-        <input type="" placeholder="Username" required="" id="username" style="border: 2px solid black; width: 81%;">
-        <span class="user"
-            style="background-color: yellow; border: 2px solid black; padding: 6px 15px; border-radius: 5px;">
-            <i class="fa fa-paper-plane" aria-hidden="true"></i>
-        </span>
-
-        <p>Mã xác nhận (được gửi về Email)</p>
-        <input type="" placeholder="Username" required="" id="username" style="border: 2px solid black;">
-        <p style="margin-top: 0; margin-bottom: 10px;">Bạn vẫn chưa nhận được mã? <span
-                style="color:rgb(255,139,139);">Gửi lại</span></p>
-
-        <input type="submit" value="SEND">
+    <div class="modal fade" id="deleteAction" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="outline: none;">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h3>FORGOT PASSWORD</h3>
+                    <div>
+                        <p>Email</p>
+                        <div class="modal-email">
+                            <input type="email" placeholder="Username" required="" id="username">
+                            <button><i class="fa fa-paper-plane" aria-hidden="true" id="forgotPassword"
+                                    onclick="myFunction()"></i></button>
+                        </div>
+                        <p>Mã xác nhận (được gửi về Email)</p>
+                        <input type="text" placeholder="Username" required="" id="username">
+                        <p>Bạn vẫn chưa nhận được mã? <span><a href="#">Gửi lại</a></span></p>
+                        <span style="color: red;">${requestScope.ERROR}</span>
+                        <input type="submit" value="SEND" style="width: 100%; margin-top: 10px;">
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+
+
 
     <div class="container-fluid">
         <div>
@@ -319,7 +331,8 @@
                 $('#change').html('Create new Account');
             }
 
-            }
+        }
+
 
 //             function fill() {
 
@@ -335,9 +348,9 @@
 // }
 
 // }
-            
-        </script>
-    </body>
+
+    </script>
+</body>
 
 
 </html>

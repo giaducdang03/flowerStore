@@ -1,79 +1,17 @@
-// function show password
-    const togglePassword = document.querySelector('#showPassword');
-    const password = document.querySelector('#password-text');
+// function forgot password
+const togglePassword = document.querySelector('#forgotPassword');
+togglePassword.addEventListener('click', forgotPassowrd);
 
-    togglePassword.addEventListener('click',showPassword);
+function forgotPassowrd() {
+    const icon = togglePassword.getAttribute('class') === 'fa fa-paper-plane' ? 'fa fa-refresh fa-spin' : 'fa fa-paper-plane';
+    togglePassword.setAttribute('class', icon);
+}
 
-    function showPassword() {
-        // toggle the type attribute
-        const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
-        password.setAttribute('type', type);
-        // toggle the eye slash icon
-        const icon = togglePassword.getAttribute('class') === 'fa-solid fa-eye' ? 'fa-solid fa-eye-slash' : 'fa-solid fa-eye';
-        togglePassword.setAttribute('class', icon);
-    }
+let timeout;
+function myFunction() {
+    timeout = setTimeout(forgotPassowrd, 10000);
+}
 
-
-    function login_regis() {
-        var text1 = document.getElementById('dangky');
-        var text2 = document.getElementById('dangnhap');
-        var text3 = document.getElementById('login');
-        var text4 = document.getElementById('register');
-        
-        if (text1.style.display === "none") {
-            text1.style.display = 'flex';
-            text4.style.zIndex = '0';
-            text2.style.display = 'none';
-            text3.style.display = 'block';
-            localStorage.setItem('login_regis_state', 'signup');
-        } else {
-            text1.style.display = 'none';
-            text3.style.display = 'none';
-            text4.style.zIndex = '1';
-            text2.style.display = 'flex';
-            localStorage.setItem('login_regis_state', 'signin');
-        }
-    }
-    
-    // Khôi phục trạng thái của login_regis()
-    document.addEventListener("DOMContentLoaded", function() {
-        var loginRegisState = localStorage.getItem('login_regis_state');
-        if (loginRegisState === 'signup') {
-            var text1 = document.getElementById('dangky');
-            var text2 = document.getElementById('dangnhap');
-            var text3 = document.getElementById('login');
-            var text4 = document.getElementById('register');
-            text1.style.display = 'flex';
-            text4.style.zIndex = '0';
-            text2.style.display = 'none';
-            text3.style.display = 'block';
-        } else if (loginRegisState === 'signin') {
-            var text1 = document.getElementById('dangky');
-            var text2 = document.getElementById('dangnhap');
-            var text3 = document.getElementById('login');
-            var text4 = document.getElementById('register');
-            text1.style.display = 'none';
-            text3.style.display = 'none';
-            text4.style.zIndex = '1';
-            text2.style.display = 'flex';
-        }
-    });
-
-    function forgot_pass() {
-        var forgot = document.getElementById('forgot-pass');
-        var show = document.getElementById('popup');
-        if (forgot) {
-            show.style.display = 'block';
-        }
-    }
-
-    function hide() {
-        var show = document.getElementById('popup');
-        var close = document.getElementById('close');
-        if (close) {
-            show.style.display = 'none';
-        }
-    }
 
 
 
