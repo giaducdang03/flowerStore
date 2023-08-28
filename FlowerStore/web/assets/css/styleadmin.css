@@ -180,18 +180,6 @@ body {
     transform: scale(0.93);
 }
 
-
-
-/* .body-main .right-bar .user-list input:focus {
-    padding-left: 35px;
-} */
-
-/* .body-main .right-bar .user-list input::placeholder {
-    padding-left: 35px;
-} */
-
-
-
 .body-main .right-bar .user-list p {
     margin: 0;
     font-weight: 900;

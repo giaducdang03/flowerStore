@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400&display=swap"
+        rel="stylesheet">
+    <!-- boostrap -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/font/css/all.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/adminV2.css">
+    <link rel="stylesheet" href="./assets/css/admin_darkmode">
+</head>
+<style>
+    .dark-bar {
+        background-color: white;
+    }
+
+    .right-bar {
+        background-color: grey;
+    }
+</style>
+
+<body class="">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2 leftbar">
+                <div class="leftbar__options">
+                    <div class="leftbar__options-title">
+                        <span>LILY LANE</span>
+                        <span> ADMIN</span>
+                    </div>
+                    <div class="leftbar-options_detail">
+                        <div class="options-detail">
+                            <p>Main</p>
+                            <span><i class="fas fa-chart-bar"></i> Dashboard</span>
+                            <span><i class="fas fa-regular fa-user"></i> User Management</span>
+                        </div>
+                        <div class="options-detail">
+                            <p>Shop</p>
+                            <span><i class="fas fa-solid fa-box"></i> Products</span>
+                            <span><i class="fas fa-solid fa-file-invoice"></i> Involces</span>
+                            <span><i class="fas fa-solid fa-truck"></i> Transfer</span>
+                        </div>
+                        <div class="options-detail">
+                            <p>Settings</p>
+                            <span><i class="fas fa-regular fa-address-card"></i> My profile</span>
+                            <span><i class="fas fa-solid fa-right-from-bracket"></i> Logout</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-10 rightbar">
+                <div class="rightbar__options">
+                    <div class="rightbar__options-navbar">
+                        <div class="row">
+                            <div class="col-md-1">
+                                Dashboard
+                            </div>
+                            <div class="col-md-3">
+                                <i class="fa-sharp fa-solid fa-house" style="color: #90959F;"></i> <span> Home / <span
+                                        style="color: #7969E1;">User Management</span></span>
+                            </div>
+                            <div class="col-md-8">
+                                <div id="dark-mode-icon" title="Toogle Dark/Light Mode">
+                                    <i class="fa-solid fa-circle-half-stroke"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rightbar__options-manageUser">
+                        <span>User</span>
+                        <button type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">+ Add
+                            User</button>
+                    </div>
+                    <div class="rightbar__option-listUsers">
+                        <div class="listUsers__search">
+                            <input type="text" name="" id="" placeholder="Searching...">
+                        </div>
+                        <div class="listUsers__details">
+                            <table class="table" style="border: none;">
+                                <tbody>
+                                    <tr>
+                                        <td>User name</td>
+                                        <td>Full name</td>
+                                        <td>Email</td>
+                                        <td>Phone number</td>
+                                        <td>Address</td>
+                                        <td>Role</td>
+                                        <td style="text-align: center;">Action</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <img src="../web/assets/img/admin/avt-admin.png" alt="" width="40px">
+                                            duongbao2k3
+                                        </td>
+                                        <td>Bảo Bất Lực</td>
+                                        <td>duongbao2k3@gmail.com</td>
+                                        <td>0909113114</td>
+                                        <td>Vung Tau</td>
+                                        <td>AD</td>
+                                        <td style="text-align: center;">
+                                            <button>Update</button>
+                                            <button>Deletee</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <img src="../web/assets/img/admin/avt-admin.png" alt="" width="40px">
+                                            ducsuy2k3
+                                        </td>
+                                        <td>Đức Bất Lực</td>
+                                        <td>dangduc2k3@gmail.com</td>
+                                        <td>0909114115</td>
+                                        <td>Los Angeles</td>
+                                        <td>AD</td>
+                                        <td style="text-align: center;">
+                                            <button>Update</button>
+                                            <button>Deletee</button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Pop-up -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Add New User</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="main_login">
+                            <p>UserName</p>
+                            <input type="text" placeholder="duongbao1234" required="">
+                            <p>User name is already exist</p>
+                        </div>
+                        <div class="main_login">
+                            <p>Full name</p>
+                            <input type="text" name="" id="" required="">
+                            <p>Full name is already exist</p>
+                        </div>
+                        <div class="main_login">
+                            <p>Password</p>
+                            <input type="text" name="" id="" required="">
+                            <p>Password is easy</p>
+                        </div>
+                        <div class="main_login infor">
+                            <div class="phone">
+                                <p>Phone Number</p>
+                                <input type="text" name="" id="" required="">
+                                <p>Phone number is error</p>
+                            </div>
+                            <div class="role">
+                                <p>Role</p>
+                                <select id="options" name="options">
+                                    <option value="option1">Admin</option>
+                                    <option value="option2">User</option>
+                                    <option value="option3">Staff</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="clear" style="clear: both;"></div>
+                        <div class="main_login">
+                            <p>Email</p>
+                            <input type="text" name="" id="" required="">
+                            <p>Email is invalid</p>
+                        </div>
+                        <div class="main_login">
+                            <p>Address</p>
+                            <input type="text" name="" id="" required="">
+                            <p>Phone number is error</p>
+                        </div>
+                        <div class="main_login">
+                            <p>Avatar</p>
+                            <input type="file" name="imageFile" accept="image/*" required="">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Add user</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        let rightbar = document.querySelector('.rightbar__options');
+        let leftbar = document.querySelector('.leftbar__options');
+        let darkMode = document.querySelector('#dark-mode-icon');
+
+        darkMode.addEventListener('click', () => {
+            leftbar.classList.toggle('dark-bar');
+            rightbar.classList.toggle('right-bar');
+        });
+    </script>
+
+    <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
